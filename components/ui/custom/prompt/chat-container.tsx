@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils"
 import { Children, useCallback, useEffect, useRef, useState } from "react"
 
 const useAutoScroll = (
-  containerRef: React.RefObject<HTMLDivElement | null>,
+  containerRef: React.RefObject<HTMLDivElement>,
   enabled: boolean
 ) => {
   const [autoScrollEnabled, setAutoScrollEnabled] = useState(true)
@@ -149,8 +149,8 @@ export type ChatContainerProps = {
   children: React.ReactNode
   className?: string
   autoScroll?: boolean
-  scrollToRef?: React.RefObject<HTMLDivElement | null>
-  ref?: React.RefObject<HTMLDivElement | null>
+  scrollToRef?: React.RefObject<HTMLDivElement>
+  ref?: React.RefObject<HTMLDivElement>
 } & React.HTMLAttributes<HTMLDivElement>
 
 function ChatContainer({
