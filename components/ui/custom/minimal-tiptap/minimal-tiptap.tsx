@@ -8,7 +8,8 @@ import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
 import { SectionTwo } from "./components/section/two";
 import { SectionFour } from "./components/section/four";
-import { LinkBubbleMenu } from "./components/bubble-menu/link-bubble-menu";
+// Temporarily disabled due to @tiptap/react v3.6.6 not exporting BubbleMenu
+// import { LinkBubbleMenu } from "./components/bubble-menu/link-bubble-menu";
 import { useMinimalTiptapEditor } from "./hooks/use-minimal-tiptap";
 import { MeasuredContainer } from "./components/measured-container";
 
@@ -65,7 +66,8 @@ export const MinimalTiptapEditor = React.forwardRef<HTMLDivElement, MinimalTipta
           editor={editor}
           className={cn("minimal-tiptap-editor", editorContentClassName)}
         />
-        <LinkBubbleMenu editor={editor} />
+        {/* Temporarily disabled due to @tiptap/react v3.6.6 not exporting BubbleMenu */}
+        {/* <LinkBubbleMenu editor={editor} /> */}
       </MeasuredContainer>
     );
   }
