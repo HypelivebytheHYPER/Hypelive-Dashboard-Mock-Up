@@ -26,7 +26,7 @@ export const Link = TiptapLink.extend({
 
   addOptions() {
     return {
-      ...this.parent?.(),
+      // Tiptap v3.x: parent options are automatically inherited
       openOnClick: false,
       HTMLAttributes: {
         class: "link"
@@ -38,7 +38,7 @@ export const Link = TiptapLink.extend({
     const { editor } = this;
 
     return [
-      ...(this.parent?.() || []),
+      // Tiptap v3.x: parent plugins are automatically inherited
       new Plugin({
         props: {
           handleKeyDown: (_: EditorView, event: KeyboardEvent) => {

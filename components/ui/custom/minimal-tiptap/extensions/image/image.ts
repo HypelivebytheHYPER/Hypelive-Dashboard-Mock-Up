@@ -142,7 +142,7 @@ export const Image = TiptapImage.extend<CustomImageOptions>({
 
   addOptions() {
     return {
-      ...this.parent?.(),
+      // Tiptap v3.x: parent options are automatically inherited
       allowedMimeTypes: [],
       maxFileSize: 0,
       uploadFn: undefined,
