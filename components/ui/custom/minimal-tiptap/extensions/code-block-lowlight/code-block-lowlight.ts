@@ -4,7 +4,7 @@ import { common, createLowlight } from 'lowlight'
 export const CodeBlockLowlight = TiptapCodeBlockLowlight.extend({
   addOptions() {
     return {
-      ...this.parent?.(),
+      // Tiptap v3.x: parent options are automatically inherited
       lowlight: createLowlight(common),
       defaultLanguage: null,
       HTMLAttributes: {
