@@ -20,7 +20,7 @@ export const Link = TiptapLink.extend({
     return [{ tag: 'a[href]:not([data-type="button"]):not([href *= "javascript:" i])' }];
   },
 
-  renderHTML({ HTMLAttributes }) {
+  renderHTML({ HTMLAttributes }: { HTMLAttributes: Record<string, any> }) {
     return ["a", mergeAttributes(this.options.HTMLAttributes, HTMLAttributes), 0];
   },
 
