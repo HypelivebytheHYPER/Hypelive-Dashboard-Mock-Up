@@ -51,6 +51,7 @@
     "@radix-ui/react-toggle-group": "^1.1.11",
     "@radix-ui/react-tooltip": "^1.0.7",
     "@tanstack/react-table": "^8.20.1",
+    "@tiptap/extension-bubble-menu": "^3.6.6",
     "@tiptap/extension-code-block-lowlight": "^3.6.6",
     "@tiptap/extension-color": "^3.6.6",
     "@tiptap/extension-heading": "^3.6.6",
