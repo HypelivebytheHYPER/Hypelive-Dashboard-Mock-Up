@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Hypelive Premium Color Palette */
+    --background: 20 16% 96%;
+    --foreground: 193 52% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 193 52% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 193 52% 11%;
+    --primary: 174 72% 21%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 343 47% 53%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 20 40% 93%;
+    --muted-foreground: 193 20% 45%;
+    --accent: 28 100% 64%;
+    --accent-foreground: 193 52% 11%;
+    --destructive: 343 47% 53%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 20 20% 88%;
+    --input: 20 20% 88%;
+    --ring: 174 72% 21%;
+    --radius: 0.75rem;
+
+    /* Premium Gradient Colors */
+    --gradient-pink: 13 40% 90%;
+    --gradient-peach: 28 100% 64%;
+    --gradient-rose: 343 47% 53%;
+    --gradient-teal: 174 72% 21%;
+    --gradient-navy: 193 52% 11%;
+
+    /* Chart Colors - Hypelive Palette */
+    --chart-1: 174 72% 21%;
+    --chart-2: 343 47% 53%;
+    --chart-3: 28 100% 64%;
+    --chart-4: 13 40% 90%;
+    --chart-5: 193 52% 11%;
+
+    --sidebar-width: 19rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply overflow-x-hidden text-foreground;
+    background: linear-gradient(135deg,
+      hsl(var(--background)) 0%,
+      hsl(var(--muted)) 50%,
+      hsl(var(--background)) 100%
+    );
+    font-feature-settings: "kern" 1, "liga" 1;
+  }
+}
+
+@layer components {
+  /* Premium Gradient Utilities */
+  .gradient-hypelive {
+    background: linear-gradient(135deg,
+      hsl(var(--gradient-teal)) 0%,
+      hsl(var(--gradient-rose)) 50%,
+      hsl(var(--gradient-peach)) 100%
+    );
+  }
+
+  .gradient-warm {
+    background: linear-gradient(135deg,
+      hsl(var(--gradient-peach)) 0%,
+      hsl(var(--gradient-rose)) 100%
+    );
+  }
+
+  .gradient-cool {
+    background: linear-gradient(135deg,
+      hsl(var(--gradient-teal)) 0%,
+      hsl(var(--gradient-navy)) 100%
+    );
+  }
+
+  /* Premium Card Styles */
+  .card-premium {
+    @apply relative overflow-hidden;
+    background: linear-gradient(135deg,
+      hsl(var(--card)) 0%,
+      hsl(var(--muted)) 100%
+    );
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+  }
+
+  .card-premium:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
+  }
+}
