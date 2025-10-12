@@ -1,7 +1,8 @@
 import * as React from 'react'
 import type { ShouldShowProps } from '../../types'
 import type { Editor } from '@tiptap/react'
-import { BubbleMenu } from '@tiptap/react'
+// Temporarily disabled due to @tiptap/react v3.6.6 not exporting BubbleMenu
+// import { BubbleMenu } from '@tiptap/react'
 import { LinkEditBlock } from '../link/link-edit-block'
 import { LinkPopoverBlock } from '../link/link-popover-block'
 
@@ -85,7 +86,9 @@ export const LinkBubbleMenu: React.FC<LinkBubbleMenuProps> = ({ editor }) => {
     updateLinkState()
   }, [editor, updateLinkState])
 
-  return (
+  // Temporarily disabled due to @tiptap/react v3.6.6 not exporting BubbleMenu
+  return null
+  /* return (
     <BubbleMenu
       editor={editor}
       shouldShow={shouldShow}
@@ -106,5 +109,5 @@ export const LinkBubbleMenu: React.FC<LinkBubbleMenuProps> = ({ editor }) => {
         <LinkPopoverBlock onClear={onUnsetLink} url={linkAttrs.href} onEdit={handleEdit} />
       )}
     </BubbleMenu>
-  )
+  ) */
 }
