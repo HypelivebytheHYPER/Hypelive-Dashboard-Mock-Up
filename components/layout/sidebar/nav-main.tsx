@@ -17,11 +17,11 @@ import {
   ActivityIcon,
   ArchiveRestoreIcon,
   BadgeDollarSignIcon,
+  BarChart3,
   BrainCircuitIcon,
   BrainIcon,
   Building2Icon,
   CalendarIcon,
-  ChartBarDecreasingIcon,
   ChartPieIcon,
   ChevronRight,
   ClipboardCheckIcon,
@@ -105,7 +105,7 @@ export const navItems: NavGroup[] = [
         ]
       },
       { title: "Sales", href: "/dashboard/sales", icon: BadgeDollarSignIcon },
-      { title: "CRM", href: "/dashboard/crm", icon: ChartBarDecreasingIcon },
+      { title: "CRM", href: "/dashboard/crm", icon: BarChart3 },
       {
         title: "Website Analytics",
         href: "/dashboard/website-analytics",
