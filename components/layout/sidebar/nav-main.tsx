@@ -14,46 +14,45 @@ import {
   useSidebar
 } from "@/components/ui/sidebar";
 import {
-  ActivityIcon,
-  ArchiveRestoreIcon,
-  BadgeDollarSignIcon,
+  Activity,
+  ArchiveRestore,
+  BadgeDollarSign,
   BarChart3,
-  BrainCircuitIcon,
-  BrainIcon,
-  Building2Icon,
-  CalendarIcon,
-  ChartPieIcon,
+  BrainCircuit,
+  Brain,
+  Building2,
+  Calendar,
+  PieChart,
   ChevronRight,
-  ClipboardCheckIcon,
-  ClipboardMinusIcon,
-  ComponentIcon,
-  CookieIcon,
-  FingerprintIcon,
-  FolderDotIcon,
-  FolderIcon,
-  GaugeIcon,
-  GraduationCapIcon,
-  ImagesIcon,
-  KeyIcon,
-  MailIcon,
-  MessageSquareIcon,
-  ProportionsIcon,
-  SettingsIcon,
-  ShoppingBagIcon,
-  SquareCheckIcon,
-  SquareKanbanIcon,
-  StickyNoteIcon,
-  UserIcon,
-  UsersIcon,
-  WalletMinimalIcon,
+  ClipboardCheck,
+  ClipboardMinus,
+  Component,
+  Cookie,
+  Fingerprint,
+  FolderDot,
+  Folder,
+  Gauge,
+  GraduationCap,
+  Images,
+  Key,
+  Mail,
+  MessageSquare,
+  Proportions,
+  Settings,
+  ShoppingBag,
+  SquareCheck,
+  SquareKanban,
+  StickyNote,
+  User,
+  Users,
+  WalletMinimal,
   type LucideIcon,
-  GithubIcon,
-  RedoDotIcon,
-  BrushCleaningIcon,
-  CreditCardIcon,
-  SpeechIcon,
-  MessageSquareHeartIcon,
-  BookAIcon
+  Github,
+  RedoDot,
+  CreditCard,
+  Speech,
+  MessageSquareHeart,
+  BookA
 } from "lucide-react";
 import Link from "next/link";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
@@ -89,12 +88,12 @@ export const navItems: NavGroup[] = [
       {
         title: "Default",
         href: "/dashboard/default",
-        icon: ChartPieIcon
+        icon: PieChart
       },
       {
         title: "E-commerce",
         href: "#",
-        icon: ShoppingBagIcon,
+        icon: ShoppingBag,
         items: [
           { title: "Dashboard", href: "/dashboard/ecommerce" },
           { title: "Product List", href: "/dashboard/pages/products" },
@@ -104,36 +103,36 @@ export const navItems: NavGroup[] = [
           { title: "Order Detail", href: "/dashboard/pages/orders/detail" }
         ]
       },
-      { title: "Sales", href: "/dashboard/sales", icon: BadgeDollarSignIcon },
+      { title: "Sales", href: "/dashboard/sales", icon: BadgeDollarSign },
       { title: "CRM", href: "/dashboard/crm", icon: BarChart3 },
       {
         title: "Website Analytics",
         href: "/dashboard/website-analytics",
-        icon: GaugeIcon
+        icon: Gauge
       },
       {
         title: "Project Management",
         href: "/dashboard/project-management",
-        icon: FolderDotIcon
+        icon: FolderDot
       },
       {
         title: "File Manager",
         href: "/dashboard/file-manager",
-        icon: FolderIcon
+        icon: Folder
       },
-      { title: "Crypto", href: "/dashboard/crypto", icon: WalletMinimalIcon },
-      { title: "Academy/School", href: "/dashboard/academy", icon: GraduationCapIcon },
-      { title: "Hospital Management", href: "/dashboard/hospital-management", icon: ActivityIcon },
-      { title: "Hotel Dashboard", href: "/dashboard/hotel", icon: Building2Icon, isComing: true },
+      { title: "Crypto", href: "/dashboard/crypto", icon: WalletMinimal },
+      { title: "Academy/School", href: "/dashboard/academy", icon: GraduationCap },
+      { title: "Hospital Management", href: "/dashboard/hospital-management", icon: Activity },
+      { title: "Hotel Dashboard", href: "/dashboard/hotel", icon: Building2, isComing: true },
       {
         title: "Finance Dashboard",
         href: "/dashboard/finance",
-        icon: WalletMinimalIcon
+        icon: WalletMinimal
       },
       {
         title: "Payment Dashboard",
         href: "/dashboard/payment",
-        icon: CreditCardIcon,
+        icon: CreditCard,
         items: [
           { title: "Dashboard", href: "/dashboard/payment" },
           { title: "Transactions", href: "/dashboard/payment/transactions" }
@@ -147,59 +146,59 @@ export const navItems: NavGroup[] = [
       {
         title: "Kanban",
         href: "/dashboard/apps/kanban",
-        icon: SquareKanbanIcon,
+        icon: SquareKanban,
         isNew: true
       },
-      { title: "Notes", href: "/dashboard/apps/notes", icon: StickyNoteIcon, isDataBadge: "8" },
-      { title: "Chats", href: "/dashboard/apps/chat", icon: MessageSquareIcon, isDataBadge: "5" },
+      { title: "Notes", href: "/dashboard/apps/notes", icon: StickyNote, isDataBadge: "8" },
+      { title: "Chats", href: "/dashboard/apps/chat", icon: MessageSquare, isDataBadge: "5" },
       {
         title: "Social Media",
         href: "/dashboard/apps/social-media",
-        icon: MessageSquareHeartIcon,
+        icon: MessageSquareHeart,
         isComing: true
       },
-      { title: "Mail", href: "/dashboard/apps/mail", icon: MailIcon },
+      { title: "Mail", href: "/dashboard/apps/mail", icon: Mail },
       {
         title: "Todo List App",
         href: "/dashboard/apps/todo-list-app",
-        icon: SquareCheckIcon
+        icon: SquareCheck
       },
       {
         title: "Tasks",
         href: "/dashboard/apps/tasks",
-        icon: ClipboardCheckIcon
+        icon: ClipboardCheck
       },
-      { title: "Calendar", href: "/dashboard/apps/calendar", icon: CalendarIcon },
+      { title: "Calendar", href: "/dashboard/apps/calendar", icon: Calendar },
       {
         title: "File Manager",
         href: "/dashboard/apps/file-manager",
-        icon: ArchiveRestoreIcon,
+        icon: ArchiveRestore,
         isNew: true
       },
-      { title: "Api Keys", href: "/dashboard/apps/api-keys", icon: KeyIcon },
-      { title: "POS App", href: "/dashboard/apps/pos-system", icon: CookieIcon },
-      { title: "Courses", href: "/dashboard/apps/courses", icon: BookAIcon, isComing: true }
+      { title: "Api Keys", href: "/dashboard/apps/api-keys", icon: Key },
+      { title: "POS App", href: "/dashboard/apps/pos-system", icon: Cookie },
+      { title: "Courses", href: "/dashboard/apps/courses", icon: BookA, isComing: true }
     ]
   },
   {
     title: "AI Apps",
     items: [
-      { title: "AI Chat", href: "/dashboard/apps/ai-chat", icon: BrainIcon },
+      { title: "AI Chat", href: "/dashboard/apps/ai-chat", icon: Brain },
       {
         title: "AI Chat V2",
         href: "/dashboard/apps/ai-chat-v2",
-        icon: BrainCircuitIcon,
+        icon: BrainCircuit,
         isNew: true
       },
       {
         title: "Image Generator",
         href: "/dashboard/apps/ai-image-generator",
-        icon: ImagesIcon
+        icon: Images
       },
       {
         title: "Text to Speech",
         href: "/dashboard/apps/text-to-speech",
-        icon: SpeechIcon,
+        icon: Speech,
         isComing: true
       }
     ]
@@ -210,22 +209,22 @@ export const navItems: NavGroup[] = [
       {
         title: "Users List",
         href: "/dashboard/pages/users",
-        icon: UsersIcon
+        icon: Users
       },
       {
         title: "Profile",
         href: "/dashboard/pages/profile",
-        icon: UserIcon
+        icon: User
       },
       {
         title: "Onboarding Flow",
         href: "/dashboard/pages/onboarding-flow",
-        icon: RedoDotIcon
+        icon: RedoDot
       },
       {
         title: "Empty States",
         href: "/dashboard/pages/empty-states/01",
-        icon: BrushCleaningIcon,
+        icon: Component,
         items: [
           { title: "Empty States 01", href: "/dashboard/pages/empty-states/01" },
           { title: "Empty States 02", href: "/dashboard/pages/empty-states/02" },
@@ -235,7 +234,7 @@ export const navItems: NavGroup[] = [
       {
         title: "Settings",
         href: "/dashboard/pages/settings",
-        icon: SettingsIcon,
+        icon: Settings,
         items: [
           { title: "Profile", href: "/dashboard/pages/settings" },
           { title: "Account", href: "/dashboard/pages/settings/account" },
@@ -248,7 +247,7 @@ export const navItems: NavGroup[] = [
       {
         title: "Pricing",
         href: "#",
-        icon: BadgeDollarSignIcon,
+        icon: BadgeDollarSign,
         items: [
           { title: "Column Pricing", href: "/dashboard/pages/pricing/column" },
           { title: "Table Pricing", href: "/dashboard/pages/pricing/table" },
@@ -258,7 +257,7 @@ export const navItems: NavGroup[] = [
       {
         title: "Authentication",
         href: "/",
-        icon: FingerprintIcon,
+        icon: Fingerprint,
         items: [
           { title: "Login v1", href: "/dashboard/login/v1" },
           { title: "Login v2", href: "/dashboard/login/v2" },
@@ -270,7 +269,7 @@ export const navItems: NavGroup[] = [
       {
         title: "Error Pages",
         href: "/",
-        icon: FingerprintIcon,
+        icon: Fingerprint,
         items: [
           { title: "404", href: "/dashboard/pages/error/404" },
           { title: "500", href: "/dashboard/pages/error/500" },
@@ -285,31 +284,31 @@ export const navItems: NavGroup[] = [
       {
         title: "Download Shadcn UI Kit",
         href: "/pricing",
-        icon: ClipboardMinusIcon,
+        icon: ClipboardMinus,
         newTab: true
       },
       {
         title: "Components",
         href: "/components",
-        icon: ComponentIcon,
+        icon: Component,
         newTab: true
       },
       {
         title: "Blocks",
         href: "/blocks",
-        icon: ComponentIcon,
+        icon: Component,
         newTab: true
       },
       {
         title: "Templates",
         href: "/templates",
-        icon: ProportionsIcon,
+        icon: Proportions,
         newTab: true
       },
       {
         title: "Github",
         href: "https://github.com/bundui",
-        icon: GithubIcon,
+        icon: Github,
         newTab: true
       }
     ]
