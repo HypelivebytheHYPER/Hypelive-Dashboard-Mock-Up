@@ -142,7 +142,10 @@ export const Image = TiptapImage.extend<CustomImageOptions>({
 
   addOptions() {
     return {
-      // Tiptap v3.x: parent options are automatically inherited
+      // Tiptap v3.x: parent options are automatically inherited, but TypeScript requires explicit types
+      inline: false,
+      allowBase64: true,
+      HTMLAttributes: {},
       allowedMimeTypes: [],
       maxFileSize: 0,
       uploadFn: undefined,
