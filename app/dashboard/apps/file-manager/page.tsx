@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { generateMeta } from "@/lib/utils";
 import { FileManager } from "./components/file-manager";
 
@@ -11,5 +12,9 @@ export async function generateMetadata() {
 }
 
 export default function Page() {
-  return <FileManager />;
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <FileManager />
+    </Suspense>
+  );
 }
