@@ -27,7 +27,7 @@ export function WelcomeCard() {
               src={`/academy-dashboard-light.svg`}
               className="block w-full dark:hidden"
               unoptimized
-              alt="shadcn/ui"
+              alt="Hypelive Dashboard"
             />
             <Image
               width={100}
@@ -35,7 +35,7 @@ export function WelcomeCard() {
               src={`/academy-dashboard-dark.svg`}
               className="hidden w-full dark:block"
               unoptimized
-              alt="shadcn/ui"
+              alt="Hypelive Dashboard"
             />
           </figure>
           <Image
@@ -44,7 +44,7 @@ export function WelcomeCard() {
             src={`/star-shape.png`}
             className="pointer-events-none absolute inset-0 aspect-auto"
             unoptimized
-            alt="shadcn/ui"
+            alt="Hypelive Dashboard"
           />
         </div>
       </CardContent>

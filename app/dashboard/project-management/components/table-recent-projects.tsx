@@ -46,7 +46,7 @@ const data: Project[] = [
     name: "Product Development",
     client: {
       avatar: `https://bundui-images.netlify.app/avatars/01.png`,
-      name: "Kevin Heal"
+      name: "Somchai Suwanprasert"
     },
     date: "20/03/2024",
     deadline: "05/04/2024",
@@ -58,7 +58,7 @@ const data: Project[] = [
     name: "New Office Building",
     client: {
       avatar: `https://bundui-images.netlify.app/avatars/02.png`,
-      name: "Sarah Johnson"
+      name: "Siriporn Wattana"
     },
     date: "15/03/2024",
     deadline: "10/04/2024",
@@ -70,7 +70,7 @@ const data: Project[] = [
     name: "Mobile app design",
     client: {
       avatar: `https://bundui-images.netlify.app/avatars/03.png`,
-      name: "Michael Chen"
+      name: "Kittipong Charoensuk"
     },
     date: "10/03/2024",
     deadline: "01/04/2024",
@@ -82,7 +82,7 @@ const data: Project[] = [
     name: "Website & Blog",
     client: {
       avatar: `https://bundui-images.netlify.app/avatars/04.png`,
-      name: "Emily Rodriguez"
+      name: "Apinya Maneerat"
     },
     date: "05/03/2024",
     deadline: "20/03/2024",
@@ -94,7 +94,7 @@ const data: Project[] = [
     name: "Marketing Campaign",
     client: {
       avatar: `https://bundui-images.netlify.app/avatars/05.png`,
-      name: "David Wilson"
+      name: "Wichai Theerawat"
     },
     date: "01/03/2024",
     deadline: "15/04/2024",
@@ -106,7 +106,7 @@ const data: Project[] = [
     name: "E-commerce Platform",
     client: {
       avatar: `https://bundui-images.netlify.app/avatars/06.png`,
-      name: "Jessica Lee"
+      name: "Nattaya Sanitwong"
     },
     date: "25/02/2024",
     deadline: "10/05/2024",
@@ -118,7 +118,7 @@ const data: Project[] = [
     name: "CRM Integration",
     client: {
       avatar: `https://bundui-images.netlify.app/avatars/07.png`,
-      name: "Robert Brown"
+      name: "Suchart Punyakul"
     },
     date: "20/02/2024",
     deadline: "15/03/2024",
@@ -130,7 +130,7 @@ const data: Project[] = [
     name: "Data Analytics Dashboard",
     client: {
       avatar: `https://bundui-images.netlify.app/avatars/08.png`,
-      name: "Amanda Taylor"
+      name: "Sumalee Sanitwong"
     },
     date: "15/02/2024",
     deadline: "30/03/2024",
@@ -142,7 +142,7 @@ const data: Project[] = [
     name: "Mobile Payment System",
     client: {
       avatar: `https://bundui-images.netlify.app/avatars/09.png`,
-      name: "Thomas Garcia"
+      name: "Chaiyaporn Theerawat"
     },
     date: "10/02/2024",
     deadline: "25/03/2024",
@@ -154,7 +154,7 @@ const data: Project[] = [
     name: "AI Chatbot Development",
     client: {
       avatar: `https://bundui-images.netlify.app/avatars/10.png`,
-      name: "Olivia Martinez"
+      name: "Nattapong Wongsuk"
     },
     date: "05/02/2024",
     deadline: "20/04/2024",
@@ -166,7 +166,7 @@ const data: Project[] = [
     name: "Cloud Migration",
     client: {
       avatar: `https://bundui-images.netlify.app/avatars/01.png`,
-      name: "William Clark"
+      name: "Anupong Lertsak"
     },
     date: "01/02/2024",
     deadline: "15/03/2024",
@@ -178,7 +178,7 @@ const data: Project[] = [
     name: "Security Audit",
     client: {
       avatar: `https://bundui-images.netlify.app/avatars/02.png`,
-      name: "Sophia Kim"
+      name: "Pornthip Wongsuk"
     },
     date: "25/01/2024",
     deadline: "10/03/2024",
@@ -238,7 +238,7 @@ export const columns: ColumnDef<Project>[] = [
       return (
         <div className="flex items-center gap-4">
           <Avatar>
-            <AvatarImage src={client.avatar} alt="shadcn ui kit" />
+            <AvatarImage src={client.avatar} alt="Hypelive Dashboard" />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
           {client.name}

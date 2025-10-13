@@ -7,41 +7,41 @@ import { Card, CardAction, CardContent, CardHeader, CardTitle } from "@/componen
 const patients = [
   {
     id: 1,
-    name: "Olivia Martin",
+    name: "Siriporn Wattana",
     avatar: `https://bundui-images.netlify.app/avatars/01.png`,
-    email: "olivia.martin@email.com",
+    email: "siriporn.wattana@email.com",
     lastProcedure: "Appendectomy",
     date: "2025-05-20"
   },
   {
     id: 2,
-    name: "Jackson Lee",
+    name: "Somchai Pattana",
     avatar: `https://bundui-images.netlify.app/avatars/02.png`,
-    email: "jackson.lee@email.com",
+    email: "somchai.pattana@email.com",
     lastProcedure: "Knee Arthroscopy",
     date: "2025-05-18"
   },
   {
     id: 3,
-    name: "Isabella Nguyen",
+    name: "Apinya Sanitwong",
     avatar: `https://bundui-images.netlify.app/avatars/03.png`,
-    email: "isabella.nguyen@email.com",
+    email: "apinya.sanitwong@email.com",
     lastProcedure: "Cataract Surgery",
     date: "2025-05-15"
   },
   {
     id: 4,
-    name: "William Chen",
+    name: "Wichai Theerawat",
     avatar: `https://bundui-images.netlify.app/avatars/04.png`,
-    email: "william.chen@email.com",
+    email: "wichai.theerawat@email.com",
     lastProcedure: "Colonoscopy",
     date: "2025-05-12"
   },
   {
     id: 5,
-    name: "Can Jackson",
+    name: "Nattaya Charoensuk",
     avatar: `https://bundui-images.netlify.app/avatars/05.png`,
-    email: "can.jackson@email.com",
+    email: "nattaya.charoensuk@email.com",
     lastProcedure: "Colonoscopy",
     date: "2025-08-12"
   }

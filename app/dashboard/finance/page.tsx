@@ -16,7 +16,7 @@ export async function generateMetadata() {
   return generateMeta({
     title: "Finance Admin Dashboard",
     description:
-      "A finance dashboard is an admin panel that visualizes key financial data such as income, expenses, cash flow, budget, and profit. Built with shadcn/ui, Tailwind CSS, Next.js.",
+      "A finance dashboard is an admin panel that visualizes key financial data such as income, expenses, cash flow, budget, and profit. Built with Hypelive, Tailwind CSS, Next.js.",
     canonical: "/finance"
   });
 }

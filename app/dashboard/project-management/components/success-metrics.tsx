@@ -6,12 +6,12 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 
 const users = [
-  { name: "Emma Smith", avatar: `https://bundui-images.netlify.app/avatars/08.png` },
-  { name: "Olivia Johnson", avatar: `https://bundui-images.netlify.app/avatars/09.png` },
-  { name: "Ava Brown", avatar: `https://bundui-images.netlify.app/avatars/03.png` },
-  { name: "Sophia Taylor", avatar: `https://bundui-images.netlify.app/avatars/04.png` },
-  { name: "Isabella Anderson", avatar: `https://bundui-images.netlify.app/avatars/05.png` },
-  { name: "Mia Thomas", avatar: `https://bundui-images.netlify.app/avatars/06.png` }
+  { name: "Busaba Sukhumvit", avatar: `https://bundui-images.netlify.app/avatars/08.png` },
+  { name: "Pranee Siripong", avatar: `https://bundui-images.netlify.app/avatars/09.png` },
+  { name: "Kittipong Narong", avatar: `https://bundui-images.netlify.app/avatars/03.png` },
+  { name: "Anupong Tanaka", avatar: `https://bundui-images.netlify.app/avatars/04.png` },
+  { name: "Sumalee Rojana", avatar: `https://bundui-images.netlify.app/avatars/05.png` },
+  { name: "Chaiyaporn Bundit", avatar: `https://bundui-images.netlify.app/avatars/06.png` }
 ];
 
 export function SuccessMetrics() {
@@ -29,7 +29,7 @@ export function SuccessMetrics() {
               <Tooltip key={key}>
                 <TooltipTrigger>
                   <Avatar className="border-card size-12 border-4 hover:z-10">
-                    <AvatarImage src={user.avatar} alt="shadcn ui kit" />
+                    <AvatarImage src={user.avatar} alt="Hypelive Dashboard" />
                     <AvatarFallback>{getInitials(user.name)}</AvatarFallback>
                   </Avatar>
                 </TooltipTrigger>

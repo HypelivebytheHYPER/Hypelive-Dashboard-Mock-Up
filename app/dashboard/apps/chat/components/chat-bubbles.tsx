@@ -256,7 +256,7 @@ function ImageChatBubble({ message }: { message: ChatMessageProps }) {
                     className="aspect-4/3 object-cover"
                     width={100}
                     height={100}
-                    alt="shadcn/ui"
+                    alt="Hypelive Dashboard"
                     unoptimized
                   />
                   {key + 1 === images_limit && images.length > images_limit && (

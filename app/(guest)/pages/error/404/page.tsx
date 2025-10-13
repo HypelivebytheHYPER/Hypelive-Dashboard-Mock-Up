@@ -4,9 +4,9 @@ import { ArrowRight } from "lucide-react";
 
 export async function generateMetadata() {
   return generateMeta({
-    title: "404 Page - Shadcn UI Kit Free",
+    title: "404 Page - Hypelive Dashboard",
     description:
-      "This is an example of a template for 404 error pages. Built with technologies like Tailwind CSS, Next.js, React and Shadcn.",
+      "This is an example of a template for 404 error pages. Built with technologies like Tailwind CSS, Next.js, React and Hypelive.",
     canonical: "/pages/error/404"
   });
 }

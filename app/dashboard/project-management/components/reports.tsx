@@ -61,7 +61,7 @@ const data: Project[] = [
     budget: 12500,
     spent: 5200,
     progress: 42,
-    manager: "John Smith"
+    manager: "Somchai Pattana"
   },
   {
     id: "PRJ-002",
@@ -73,7 +73,7 @@ const data: Project[] = [
     budget: 35000,
     spent: 12800,
     progress: 36,
-    manager: "Sarah Johnson"
+    manager: "Siriporn Wattana"
   },
   {
     id: "PRJ-003",
@@ -85,7 +85,7 @@ const data: Project[] = [
     budget: 8500,
     spent: 8500,
     progress: 100,
-    manager: "Michael Brown"
+    manager: "Wichai Theerawat"
   },
   {
     id: "PRJ-004",
@@ -97,7 +97,7 @@ const data: Project[] = [
     budget: 42000,
     spent: 18600,
     progress: 44,
-    manager: "Emily Davis"
+    manager: "Apinya Sanitwong"
   },
   {
     id: "PRJ-005",
@@ -109,7 +109,7 @@ const data: Project[] = [
     budget: 4500,
     spent: 1200,
     progress: 27,
-    manager: "David Wilson"
+    manager: "Kittipong Narong"
   },
   {
     id: "PRJ-006",
@@ -121,7 +121,7 @@ const data: Project[] = [
     budget: 18000,
     spent: 4500,
     progress: 25,
-    manager: "Lisa Anderson"
+    manager: "Nattaya Charoensuk"
   },
   {
     id: "PRJ-007",
@@ -133,7 +133,7 @@ const data: Project[] = [
     budget: 28000,
     spent: 9800,
     progress: 35,
-    manager: "Robert Taylor"
+    manager: "Anupong Tanaka"
   },
   {
     id: "PRJ-008",
@@ -145,7 +145,7 @@ const data: Project[] = [
     budget: 7500,
     spent: 7500,
     progress: 100,
-    manager: "Jennifer Martinez"
+    manager: "Busaba Sukhumvit"
   },
   {
     id: "PRJ-009",
@@ -157,7 +157,7 @@ const data: Project[] = [
     budget: 15000,
     spent: 3200,
     progress: 21,
-    manager: "Thomas Clark"
+    manager: "Chaiyaporn Bundit"
   },
   {
     id: "PRJ-010",
@@ -169,7 +169,7 @@ const data: Project[] = [
     budget: 22000,
     spent: 8900,
     progress: 40,
-    manager: "Amanda Lewis"
+    manager: "Pranee Siripong"
   },
   {
     id: "PRJ-011",
@@ -181,7 +181,7 @@ const data: Project[] = [
     budget: 9500,
     spent: 4200,
     progress: 44,
-    manager: "Kevin White"
+    manager: "Sumalee Rojana"
   },
   {
     id: "PRJ-012",
@@ -193,7 +193,7 @@ const data: Project[] = [
     budget: 12000,
     spent: 12000,
     progress: 100,
-    manager: "Patricia Moore"
+    manager: "Pornthip Srisuwan"
   },
   {
     id: "PRJ-013",
@@ -205,7 +205,7 @@ const data: Project[] = [
     budget: 18500,
     spent: 7200,
     progress: 39,
-    manager: "James Wilson"
+    manager: "Suchart Bunprasert"
   },
   {
     id: "PRJ-014",
@@ -217,7 +217,7 @@ const data: Project[] = [
     budget: 14000,
     spent: 3500,
     progress: 25,
-    manager: "Michelle Johnson"
+    manager: "Nattapong Lertsak"
   },
   {
     id: "PRJ-015",
@@ -229,7 +229,7 @@ const data: Project[] = [
     budget: 8500,
     spent: 2100,
     progress: 25,
-    manager: "Daniel Brown"
+    manager: "Thaksin Wongcharoen"
   },
   {
     id: "PRJ-016",
@@ -241,7 +241,7 @@ const data: Project[] = [
     budget: 32000,
     spent: 12800,
     progress: 40,
-    manager: "Christopher Lee"
+    manager: "Manop Nakarin"
   },
   {
     id: "PRJ-017",
@@ -253,7 +253,7 @@ const data: Project[] = [
     budget: 6500,
     spent: 2600,
     progress: 40,
-    manager: "Jessica Taylor"
+    manager: "Wilawan Pongpat"
   },
   {
     id: "PRJ-018",
@@ -265,7 +265,7 @@ const data: Project[] = [
     budget: 9000,
     spent: 9000,
     progress: 100,
-    manager: "Andrew Martin"
+    manager: "Rattana Somboon"
   },
   {
     id: "PRJ-019",
@@ -277,7 +277,7 @@ const data: Project[] = [
     budget: 16500,
     spent: 6800,
     progress: 41,
-    manager: "Stephanie Garcia"
+    manager: "Suwanna Kanjanakul"
   },
   {
     id: "PRJ-020",
@@ -289,7 +289,7 @@ const data: Project[] = [
     budget: 21000,
     spent: 9450,
     progress: 45,
-    manager: "Brian Wilson"
+    manager: "Prasert Mongkol"
   }
 ];
 

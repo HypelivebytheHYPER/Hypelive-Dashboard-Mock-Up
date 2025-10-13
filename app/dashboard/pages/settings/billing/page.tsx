@@ -100,7 +100,7 @@ export default function Page() {
           <div className="flex items-center justify-between rounded-lg border p-4">
             <div className="space-y-2">
               <div className="flex items-center gap-2">
-                <div className="font-medium">Carolyn Perkins •••• 0392</div>
+                <div className="font-medium">Siriporn Wattana •••• 0392</div>
                 <Badge variant="info">Primary</Badge>
               </div>
               <p className="text-muted-foreground text-sm">Expired Dec 2025</p>
@@ -112,7 +112,7 @@ export default function Page() {
 
           <div className="flex items-center justify-between rounded-lg border p-4">
             <div className="space-y-2">
-              <div className="font-medium">Carolyn Perkins •••• 8461</div>
+              <div className="font-medium">Siriporn Wattana •••• 8461</div>
               <p className="text-muted-foreground text-sm">Expired Jun 2025</p>
             </div>
             <Button variant="outline" size="icon">

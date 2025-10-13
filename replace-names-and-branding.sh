@@ -45,4 +45,7 @@ find . -type f \( -name "*.tsx" -o -name "*.ts" -o -name "*.json" \) -exec sed -
 find . -type f \( -name "*.tsx" -o -name "*.ts" \) -exec sed -i '' 's|Built with shadcn/ui|Built with Hypelive|g' {} +
 find . -type f \( -name "*.tsx" -o -name "*.ts" \) -exec sed -i '' 's|built with shadcn/ui|built with Hypelive|g' {} +
 
+# Update title suffix
+find . -type f \( -name "*.tsx" -o -name "*.ts" \) -exec sed -i '' 's|Shadcn UI Kit|Hypelive Dashboard|g' {} +
+
 echo "✅ All names and branding updated successfully!"

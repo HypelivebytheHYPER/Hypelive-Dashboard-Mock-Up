@@ -54,7 +54,7 @@ export async function generateMetadata() {
   return generateMeta({
     title: "Order Detail Page",
     description:
-      "View and track your order details quickly on this page built with shadcn/ui, Tailwind CSS, and Next.js. Access comprehensive order information at a glance.",
+      "View and track your order details quickly on this page built with Hypelive, Tailwind CSS, and Next.js. Access comprehensive order information at a glance.",
     canonical: "/pages/orders/detail"
   });
 }

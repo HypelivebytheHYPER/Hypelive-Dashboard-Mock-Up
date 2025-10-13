@@ -13,7 +13,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return generateMeta({
     title: "Orders Page",
     description:
-      "A list of orders generated using the Tanstack Table. Built with Tailwind CSS, shadcn/ui and Next.js.",
+      "A list of orders generated using the Tanstack Table. Built with Tailwind CSS, Hypelive and Next.js.",
     canonical: "/pages/orders"
   });
 }

@@ -12,7 +12,7 @@ export const notifications = [
   },
   {
     id: 2,
-    title: "Congratulations Darlene  🎉",
+    title: "Congratulations Nattaya  🎉",
     role: "UI/UX Designer",
     desc: "Won the monthly best seller badge",
     avatar: "02.png",
@@ -23,7 +23,7 @@ export const notifications = [
   },
   {
     id: 3,
-    title: "Joaquina Weisenborn",
+    title: "Siriporn Wattana",
     role: "Town planner",
     desc: "Requesting access permission",
     avatar: "03.png",
@@ -34,7 +34,7 @@ export const notifications = [
   },
   {
     id: 4,
-    title: "Brooklyn Simmons",
+    title: "Apinya Sanitwong",
     role: "Data scientist",
     desc: "Added you to Top Secret Project group...",
     avatar: "04.png",
@@ -45,7 +45,7 @@ export const notifications = [
   },
   {
     id: 5,
-    title: "Margot Henschke",
+    title: "Pornthip Charoensuk",
     role: "Dietitian",
     desc: "Cake pie jelly jelly beans. Marzipan lemon drops halvah cake. Pudding cookie lemon drops icing",
     avatar: "05.png",
@@ -56,7 +56,7 @@ export const notifications = [
   },
   {
     id: 6,
-    title: "Sal Piggee",
+    title: "Kittipong Lertsak",
     role: "Marketing executive",
     desc: "Toffee caramels jelly-o tart gummi bears cake I love ice cream lollipop. Sweet liquorice croissant candy danish dessert icing. Cake macaroon gingerbread toffee sweet.",
     avatar: "06.png",
@@ -67,7 +67,7 @@ export const notifications = [
   },
   {
     id: 7,
-    title: "Miguel Guelff",
+    title: "Wichai Theerawat",
     role: "Special educational needs teacher",
     desc: "Biscuit powder oat cake donut brownie ice cream I love soufflé. I love tootsie roll I love powder tootsie roll.",
     avatar: "07.png",
@@ -78,7 +78,7 @@ export const notifications = [
   },
   {
     id: 8,
-    title: "Mauro Elenbaas",
+    title: "Chaiyaporn Suwanprasert",
     role: "Advertising copywriter",
     desc: "Bear claw ice cream lollipop gingerbread carrot cake. Brownie gummi bears chocolate muffin croissant jelly I love marzipan wafer.",
     avatar: "08.png",
@@ -89,7 +89,7 @@ export const notifications = [
   },
   {
     id: 9,
-    title: "Bridgett Omohundro",
+    title: "Sumalee Maneerat",
     role: "Designer, television/film set",
     desc: "Gummies gummi bears I love candy icing apple pie I love marzipan bear claw. I love tart biscuit I love candy canes pudding chupa chups liquorice croissant.",
     avatar: "09.png",
@@ -100,7 +100,7 @@ export const notifications = [
   },
   {
     id: 10,
-    title: "Zenia Jacobs",
+    title: "Anupong Wongsuk",
     role: "Building surveyor",
     desc: "Cake pie jelly jelly beans. Marzipan lemon drops halvah cake. Pudding cookie lemon drops icing",
     avatar: "10.png",

@@ -7,7 +7,7 @@ import { generateAvatarFallback } from "@/lib/utils";
 const reviews = [
   {
     id: 4,
-    name: "Mark P.",
+    name: "Somchai P.",
     image: `https://bundui-images.netlify.app/avatars/01.png`,
     title: "Decent but could be better",
     body: "The product is okay, but I expected more for the price. A few minor flaws, but overall, it's acceptable.",
@@ -15,10 +15,10 @@ const reviews = [
   },
   {
     id: 5,
-    name: "Jessica K.",
+    name: "Apinya K.",
     image: `https://bundui-images.netlify.app/avatars/02.png`,
     title: "Beautiful design",
-    body: "I love the sleek design and the ease of use. Haven’t come across such a stylish product in a long time. Highly satisfied!",
+    body: "I love the sleek design and the ease of use. Haven't come across such a stylish product in a long time. Highly satisfied!",
     date: "2 weeks ago"
   },
   {
@@ -31,26 +31,26 @@ const reviews = [
   },
   {
     id: 7,
-    name: "Anna M.",
+    name: "Nattaya M.",
     image: `https://bundui-images.netlify.app/avatars/04.png`,
     title: "Could be improved",
-    body: "The product works, but there’s room for improvement. It does its job, but the build quality feels a bit cheap.",
+    body: "The product works, but there's room for improvement. It does its job, but the build quality feels a bit cheap.",
     date: "6 days ago"
   },
   {
     id: 8,
-    name: "Chris T.",
+    name: "Chaiyaporn T.",
     image: `https://bundui-images.netlify.app/avatars/05.png`,
     title: "Great for everyday use",
-    body: "Perfect for daily use. It’s simple, efficient, and does exactly what it promises. Definitely worth the money.",
+    body: "Perfect for daily use. It's simple, efficient, and does exactly what it promises. Definitely worth the money.",
     date: "1 day ago"
   },
   {
     id: 9,
-    name: "Lisa G.",
+    name: "Siriporn G.",
     image: `https://bundui-images.netlify.app/avatars/06.png`,
     title: "Not worth the price",
-    body: "The product does the job, but I feel it’s overpriced for what it offers. There are better options available at a similar price.",
+    body: "The product does the job, but I feel it's overpriced for what it offers. There are better options available at a similar price.",
     date: "3 weeks ago"
   },
   {

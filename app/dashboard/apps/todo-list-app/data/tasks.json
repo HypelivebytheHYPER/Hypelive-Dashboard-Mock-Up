@@ -43,7 +43,7 @@
     "id": "6",
     "title": "Write unit tests",
     "description": "Add unit tests for authentication module",
-    "assignedTo": ["Sophie Lee"],
+    "assignedTo": ["Siriporn Sanitwong"],
     "comments": [
       {
         "id": "c4",
@@ -66,7 +66,7 @@
     "id": "7",
     "title": "Prepare launch checklist",
     "description": "Create a checklist of items before launch day",
-    "assignedTo": ["Daniel Kim", "Olivia Adams"],
+    "assignedTo": ["Wichai Theerawat", "Nattaya Wongsuk"],
     "comments": [],
     "status": "pending",
     "priority": "low",
@@ -81,7 +81,7 @@
     "id": "8",
     "title": "Update privacy policy",
     "description": "Add GDPR compliance section",
-    "assignedTo": ["Olivia Adams"],
+    "assignedTo": ["Nattaya Wongsuk"],
     "comments": [
       {
         "id": "c5",
@@ -104,7 +104,7 @@
     "id": "9",
     "title": "Deploy to staging",
     "description": "Deploy the latest build to the staging environment",
-    "assignedTo": ["Noah Bennett"],
+    "assignedTo": ["Somchai Theerawat"],
     "comments": [],
     "status": "completed",
     "priority": "high",
@@ -121,7 +121,7 @@
     "id": "10",
     "title": "Organize team retro",
     "description": "Plan and host the sprint retrospective meeting",
-    "assignedTo": ["Mia Turner", "Olivia Adams"],
+    "assignedTo": ["Sumalee Charoensuk", "Nattaya Wongsuk"],
     "comments": [],
     "status": "pending",
     "priority": "low",
@@ -138,7 +138,7 @@
     "id": "11",
     "title": "Refactor dashboard UI",
     "description": "Improve layout and responsiveness of the dashboard page",
-    "assignedTo": ["Lucas Evans", "Mia Turner", "Olivia Adams"],
+    "assignedTo": ["Kittipong Sanitwong", "Sumalee Charoensuk", "Nattaya Wongsuk"],
     "comments": [
       {
         "id": "c6",

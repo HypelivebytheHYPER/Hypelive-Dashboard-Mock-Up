@@ -22,27 +22,27 @@ import { Button } from "@/components/ui/button";
 
 const users = [
   {
-    name: "Olivia Martin",
+    name: "Nattaya Sanitwong",
     email: "m@example.com",
     avatar: `https://bundui-images.netlify.app/avatars/01.png`
   },
   {
-    name: "Isabella Nguyen",
+    name: "Siriporn Wattana",
     email: "isabella.nguyen@email.com",
     avatar: `https://bundui-images.netlify.app/avatars/07.png`
   },
   {
-    name: "Emma Wilson",
+    name: "Apinya Maneerat",
     email: "emma@example.com",
     avatar: `https://bundui-images.netlify.app/avatars/02.png`
   },
   {
-    name: "Jackson Lee",
+    name: "Somchai Suwanprasert",
     email: "lee@example.com",
     avatar: `https://bundui-images.netlify.app/avatars/09.png`
   },
   {
-    name: "William Kim",
+    name: "Chaiyaporn Theerawat",
     email: "will@email.com",
     avatar: `https://bundui-images.netlify.app/avatars/06.png`
   }

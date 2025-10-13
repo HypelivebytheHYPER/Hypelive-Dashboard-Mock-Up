@@ -29,7 +29,7 @@ export function DigitalWallets() {
               className="size-6 object-contain"
               src={"https://bundui-images.netlify.app/crypto-icons/bitcoin.svg"}
               unoptimized
-              alt="shadcn/ui"
+              alt="Hypelive Dashboard"
             />
             <span>Bitcoin Wallet</span>
           </div>
@@ -45,7 +45,7 @@ export function DigitalWallets() {
               className="size-6 object-contain"
               src={"https://bundui-images.netlify.app/crypto-icons/ethereum.svg"}
               unoptimized
-              alt="shadcn/ui"
+              alt="Hypelive Dashboard"
             />
             <span>Ethereum Wallet</span>
           </div>

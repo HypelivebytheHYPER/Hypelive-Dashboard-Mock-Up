@@ -282,7 +282,7 @@ export const navItems: NavGroup[] = [
     title: "Others",
     items: [
       {
-        title: "Download Shadcn UI Kit",
+        title: "Download Hypelive Dashboard",
         href: "/pricing",
         icon: ClipboardMinus,
         newTab: true

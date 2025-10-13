@@ -11,32 +11,32 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/comp
 
 const connections = [
   {
-    name: "Olivia Davis",
-    email: "olivia.davis@example.com",
+    name: "Nattaya Sanitwong",
+    email: "nattaya.sanitwong@example.com",
     avatar: `https://bundui-images.netlify.app/avatars/01.png`,
     status: "connect"
   },
   {
     name: "Somchai Suwanprasert",
-    email: "john.doe@example.com",
+    email: "somchai.suwanprasert@example.com",
     avatar: `https://bundui-images.netlify.app/avatars/02.png`,
     status: "disconnect"
   },
   {
-    name: "Alice Smith",
-    email: "alice.smith@example.com",
+    name: "Siriporn Wattana",
+    email: "siriporn.wattana@example.com",
     avatar: `https://bundui-images.netlify.app/avatars/03.png`,
     status: "connect"
   },
   {
     name: "Apinya Maneerat",
-    email: "emily.martinez@example.com",
+    email: "apinya.maneerat@example.com",
     avatar: `https://bundui-images.netlify.app/avatars/05.png`,
     status: "disconnect"
   },
   {
     name: "Nattapong Charoensuk",
-    email: "james.wilson@example.com",
+    email: "nattapong.charoensuk@example.com",
     avatar: `https://bundui-images.netlify.app/avatars/06.png`,
     status: "disconnect"
   }

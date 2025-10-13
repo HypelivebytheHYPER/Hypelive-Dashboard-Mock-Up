@@ -16,7 +16,7 @@ export function ProfileCard() {
             </Avatar>
             <div className="text-center">
               <h5 className="flex items-center gap-2 text-xl font-semibold">
-                Anshan Haso <Badge variant="info">Pro</Badge>
+                Nattapong Lertsak <Badge variant="info">Pro</Badge>
               </h5>
               <div className="text-muted-foreground text-sm">Project Manager</div>
             </div>
@@ -37,7 +37,7 @@ export function ProfileCard() {
           </div>
           <div className="flex flex-col gap-y-4">
             <div className="flex items-center gap-3 text-sm">
-              <Mail className="text-muted-foreground size-4" /> hello@tobybelhome.com
+              <Mail className="text-muted-foreground size-4" /> nattapong.lertsak@hypelive.com
             </div>
             <div className="flex items-center gap-3 text-sm">
               <PhoneCall className="text-muted-foreground size-4" /> (+1-876) 8654 239 581

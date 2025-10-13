@@ -19,7 +19,7 @@ import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 const transactions = [
   {
     id: 1,
-    description: "Samantha William",
+    description: "Siriporn Wattana",
     date: "30 April 2024, 10:15 AM",
     type: "Income",
     amount: 1640.26,
@@ -46,11 +46,11 @@ const transactions = [
   },
   {
     id: 4,
-    description: "Karen Smith",
+    description: "Apinya Sanitwong",
     date: "10 April 2024, 3:50 PM",
     type: "Income",
     amount: 842.5,
-    icon: "K",
+    icon: "A",
     color: "bg-purple-500"
   },
   {
@@ -73,11 +73,11 @@ const transactions = [
   },
   {
     id: 7,
-    description: "Freelance Project Payment",
+    description: "Wichai Theerawat",
     date: "5 March 2024, 11:00 AM",
     type: "Income",
     amount: 980.75,
-    icon: "F",
+    icon: "W",
     color: "bg-green-600"
   }
 ];

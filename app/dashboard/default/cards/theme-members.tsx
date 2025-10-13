@@ -40,7 +40,7 @@ export default function TeamMembersCard() {
               <AvatarFallback>OM</AvatarFallback>
             </Avatar>
             <div>
-              <p className="text-sm font-medium leading-none">Sofia Davis</p>
+              <p className="text-sm font-medium leading-none">Nattaya Sanitwong</p>
               <p className="text-sm text-muted-foreground">m@example.com</p>
             </div>
           </div>
@@ -94,7 +94,7 @@ export default function TeamMembersCard() {
               <AvatarFallback>JL</AvatarFallback>
             </Avatar>
             <div>
-              <p className="text-sm font-medium leading-none">Jackson Lee</p>
+              <p className="text-sm font-medium leading-none">Somchai Suwanprasert</p>
               <p className="text-sm text-muted-foreground">p@example.com</p>
             </div>
           </div>

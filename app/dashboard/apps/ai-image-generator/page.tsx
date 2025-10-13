@@ -6,7 +6,7 @@ export async function generateMetadata() {
   return generateMeta({
     title: "AI Image Generator",
     description:
-      "UI components and application template for AI image generation tools. Built with Tailwind CSS, React, Next.js. shadcn/ui is compatible and contains Typescript files.",
+      "UI components and application template for AI image generation tools. Built with Tailwind CSS, React, Next.js. Hypelive is compatible and contains Typescript files.",
     canonical: "/apps/ai-image-generator"
   });
 }

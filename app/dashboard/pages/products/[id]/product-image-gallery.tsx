@@ -47,7 +47,7 @@ export default function ProductImageGallery() {
               className="aspect-3/2 w-full rounded-lg object-contain lg:aspect-square"
               width={300}
               height={300}
-              alt="shadcn/ui"
+              alt="Hypelive Dashboard"
               unoptimized
             />
           </SwiperSlide>
@@ -70,7 +70,7 @@ export default function ProductImageGallery() {
                 src={image}
                 width={300}
                 height={300}
-                alt="shadcn/ui"
+                alt="Hypelive Dashboard"
                 unoptimized
               />
             </figure>

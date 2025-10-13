@@ -56,7 +56,7 @@ type Order = {
 const data: Order[] = [
   {
     id: "1083",
-    customerName: "Marvin Dekidis",
+    customerName: "Somchai Wongsuk",
     items: 2,
     amount: 34.5,
     paymentMethod: "E-Wallet",
@@ -64,7 +64,7 @@ const data: Order[] = [
   },
   {
     id: "1082",
-    customerName: "Carter Lipshitz",
+    customerName: "Wichai Theerawat",
     items: 6,
     amount: 60.5,
     paymentMethod: "Bank Transfer",
@@ -72,7 +72,7 @@ const data: Order[] = [
   },
   {
     id: "1081",
-    customerName: "Addison Philips",
+    customerName: "Apinya Sanitwong",
     items: 3,
     amount: 47.5,
     paymentMethod: "E-Wallet",
@@ -80,7 +80,7 @@ const data: Order[] = [
   },
   {
     id: "1079",
-    customerName: "Craig Siphron",
+    customerName: "Kittipong Charoensuk",
     items: 15,
     amount: 89.8,
     paymentMethod: "Bank Transfer",
@@ -88,7 +88,7 @@ const data: Order[] = [
   },
   {
     id: "1078",
-    customerName: "Emma Johnson",
+    customerName: "Nattaya Maneerat",
     items: 4,
     amount: 120.75,
     paymentMethod: "Credit Card",
@@ -96,7 +96,7 @@ const data: Order[] = [
   },
   {
     id: "1077",
-    customerName: "Michael Smith",
+    customerName: "Chaiyaporn Suwanprasert",
     items: 8,
     amount: 210.5,
     paymentMethod: "PayPal",
@@ -104,7 +104,7 @@ const data: Order[] = [
   },
   {
     id: "1076",
-    customerName: "Sarah Williams",
+    customerName: "Siriporn Wattana",
     items: 1,
     amount: 25.99,
     paymentMethod: "E-Wallet",
@@ -112,7 +112,7 @@ const data: Order[] = [
   },
   {
     id: "1075",
-    customerName: "James Brown",
+    customerName: "Anupong Theerawat",
     items: 3,
     amount: 78.45,
     paymentMethod: "Bank Transfer",
@@ -120,7 +120,7 @@ const data: Order[] = [
   },
   {
     id: "1074",
-    customerName: "David Miller",
+    customerName: "Nattapong Lertsak",
     items: 5,
     amount: 145.2,
     paymentMethod: "Credit Card",
@@ -128,7 +128,7 @@ const data: Order[] = [
   },
   {
     id: "1073",
-    customerName: "Jennifer Davis",
+    customerName: "Sumalee Sanitwong",
     items: 2,
     amount: 67.8,
     paymentMethod: "PayPal",
@@ -136,7 +136,7 @@ const data: Order[] = [
   },
   {
     id: "1072",
-    customerName: "Robert Wilson",
+    customerName: "Suchart Punyakul",
     items: 7,
     amount: 198.35,
     paymentMethod: "Bank Transfer",
@@ -144,7 +144,7 @@ const data: Order[] = [
   },
   {
     id: "1071",
-    customerName: "Lisa Anderson",
+    customerName: "Pornthip Wongsuk",
     items: 4,
     amount: 112.9,
     paymentMethod: "E-Wallet",
@@ -152,7 +152,7 @@ const data: Order[] = [
   },
   {
     id: "1070",
-    customerName: "Thomas Taylor",
+    customerName: "Thaksin Boonyarit",
     items: 9,
     amount: 245.75,
     paymentMethod: "Credit Card",
@@ -160,7 +160,7 @@ const data: Order[] = [
   },
   {
     id: "1069",
-    customerName: "Patricia Moore",
+    customerName: "Busaba Rojchanawong",
     items: 3,
     amount: 87.6,
     paymentMethod: "Bank Transfer",
@@ -168,7 +168,7 @@ const data: Order[] = [
   },
   {
     id: "1068",
-    customerName: "Christopher White",
+    customerName: "Pranee Chaimongkol",
     items: 6,
     amount: 156.4,
     paymentMethod: "PayPal",
@@ -176,7 +176,7 @@ const data: Order[] = [
   },
   {
     id: "1067",
-    customerName: "Elizabeth Harris",
+    customerName: "Apinya Thanaporn",
     items: 2,
     amount: 54.25,
     paymentMethod: "E-Wallet",

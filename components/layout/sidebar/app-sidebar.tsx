@@ -55,7 +55,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               <DropdownMenuTrigger asChild>
                 <SidebarMenuButton className="hover:text-foreground h-10 group-data-[collapsible=icon]:px-0! hover:bg-[var(--primary)]/5">
                   <Logo />
-                  <span className="font-semibold">Shadcn UI Kit</span>
+                  <span className="font-semibold">Hypelive Dashboard</span>
                   <ChevronsUpDown className="ml-auto group-data-[collapsible=icon]:hidden" />
                 </SidebarMenuButton>
               </DropdownMenuTrigger>
@@ -107,8 +107,8 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
           </CardHeader>
           <CardContent className="px-3">
             <Button className="w-full" asChild>
-              <Link href="https://shadcnuikit.com/pricing" target="_blank">
-                Get Shadcn UI Kit
+              <Link href="https://hypelive.studio/pricing" target="_blank">
+                Get Hypelive Dashboard
               </Link>
             </Button>
           </CardContent>

@@ -21,7 +21,7 @@ export default function UserMenu() {
         <Avatar>
           <AvatarImage
             src={`https://bundui-images.netlify.app/avatars/01.png`}
-            alt="shadcn ui kit"
+            alt="Hypelive Dashboard"
           />
           <AvatarFallback className="rounded-lg">TB</AvatarFallback>
         </Avatar>
@@ -32,20 +32,20 @@ export default function UserMenu() {
             <Avatar>
               <AvatarImage
                 src={`https://bundui-images.netlify.app/avatars/01.png`}
-                alt="shadcn ui kit"
+                alt="Hypelive Dashboard"
               />
               <AvatarFallback className="rounded-lg">TB</AvatarFallback>
             </Avatar>
             <div className="grid flex-1 text-left text-sm leading-tight">
-              <span className="truncate font-semibold">Toby Belhome</span>
-              <span className="text-muted-foreground truncate text-xs">hello@tobybelhome.com</span>
+              <span className="truncate font-semibold">Somchai Rattana</span>
+              <span className="text-muted-foreground truncate text-xs">somchai.rattana@hypelive.com</span>
             </div>
           </div>
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
           <DropdownMenuItem asChild>
-            <Link href="https://shadcnuikit.com/pricing" target="_blank">
+            <Link href="https://hypelive.studio/pricing" target="_blank">
               <Sparkles /> Upgrade to Pro
             </Link>
           </DropdownMenuItem>

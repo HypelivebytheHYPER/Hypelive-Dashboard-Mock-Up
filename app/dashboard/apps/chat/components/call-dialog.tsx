@@ -24,10 +24,10 @@ export function CallDialog() {
           <Avatar className="size-16">
             <AvatarImage
               src={`https://bundui-images.netlify.app/avatars/04.png`}
-              alt="shadcn/ui avatar"
+              alt="Hypelive Dashboard avatar"
             />
           </Avatar>
-          <div className="text-lg">Jennica calling ...</div>
+          <div className="text-lg">Apinya calling ...</div>
         </div>
         <div className="flex gap-4">
           <Button variant="destructive" className="size-12 rounded-full">
