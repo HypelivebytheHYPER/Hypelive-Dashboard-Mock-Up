@@ -65,7 +65,7 @@ export default function Page() {
     date: "2025-04-15",
     status: "shipped",
     customer: {
-      name: "Alice Johnson",
+      name: "Busaba Rojchanawong",
       email: "alice@example.com",
       address: "123 Main St, Anytown, AN 12345"
     },

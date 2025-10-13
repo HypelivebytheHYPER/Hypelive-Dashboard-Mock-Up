@@ -38,27 +38,27 @@ import {
 
 const users = [
   {
-    name: "Olivia Martin",
+    name: "Apinya Maneerat",
     email: "m@example.com",
     avatar: "/avatars/01.png",
   },
   {
-    name: "Isabella Nguyen",
+    name: "Nattaya Sanitwong",
     email: "isabella.nguyen@email.com",
     avatar: "/avatars/03.png",
   },
   {
-    name: "Emma Wilson",
+    name: "Sumalee Wongsuk",
     email: "emma@example.com",
     avatar: "/avatars/05.png",
   },
   {
-    name: "Jackson Lee",
+    name: "Suchart Punyakul",
     email: "lee@example.com",
     avatar: "/avatars/02.png",
   },
   {
-    name: "William Kim",
+    name: "Kittipong Sukhum",
     email: "will@email.com",
     avatar: "/avatars/04.png",
   },
@@ -101,7 +101,7 @@ export function ChatCard() {
               <AvatarFallback>OM</AvatarFallback>
             </Avatar>
             <div>
-              <p className="text-sm font-medium leading-none">Sofia Davis</p>
+              <p className="text-sm font-medium leading-none">Siriporn Srisawat</p>
               <p className="text-sm text-muted-foreground">m@example.com</p>
             </div>
           </div>

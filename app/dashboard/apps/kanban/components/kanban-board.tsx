@@ -71,20 +71,20 @@ export default function KanbanBoard() {
         title: "Integrate Stripe payment gateway",
         description: "Set up and configure Stripe API for handling credit card transactions.",
         priority: "high",
-        assignee: "Emma Johnson",
+        assignee: "Pranee Chaimongkol",
         dueDate: "2024-09-20",
         users: [
           {
-            name: "Emma",
+            name: "Pranee",
             src: "https://bundui-images.netlify.app/avatars/01.png",
-            alt: "Emma Avatar",
-            fallback: "EJ"
+            alt: "Pranee Avatar",
+            fallback: "PC"
           },
           {
-            name: "Daniel",
+            name: "Anupong",
             src: "https://bundui-images.netlify.app/avatars/02.png",
-            alt: "Daniel Avatar",
-            fallback: "DS"
+            alt: "Anupong Avatar",
+            fallback: "AC"
           }
         ],
         progress: 10,
@@ -96,20 +96,20 @@ export default function KanbanBoard() {
         title: "Redesign marketing homepage",
         description: "Update the homepage with the new brand colors, typography, and hero section.",
         priority: "medium",
-        assignee: "Lucas Brown",
+        assignee: "Wichai Lertsak",
         dueDate: "2024-09-25",
         users: [
           {
-            name: "Lucas",
+            name: "Wichai",
             src: "https://bundui-images.netlify.app/avatars/03.png",
-            alt: "Lucas Avatar",
-            fallback: "LB"
+            alt: "Wichai Avatar",
+            fallback: "WL"
           },
           {
-            name: "Sophia",
+            name: "Siriporn",
             src: "https://bundui-images.netlify.app/avatars/04.png",
-            alt: "Sophia Avatar",
-            fallback: "SR"
+            alt: "Siriporn Avatar",
+            fallback: "SS"
           }
         ],
         progress: 0,
@@ -121,20 +121,20 @@ export default function KanbanBoard() {
         title: "Set up automated backups",
         description: "Implement daily database backups with secure cloud storage.",
         priority: "low",
-        assignee: "Mia Williams",
+        assignee: "Sumalee Wongsuk",
         dueDate: "2024-09-28",
         users: [
           {
-            name: "Mia",
+            name: "Sumalee",
             src: "https://bundui-images.netlify.app/avatars/05.png",
-            alt: "Mia Avatar",
-            fallback: "MW"
+            alt: "Sumalee Avatar",
+            fallback: "SW"
           },
           {
-            name: "Jack",
+            name: "Suchart",
             src: "https://bundui-images.netlify.app/avatars/06.png",
-            alt: "Jack Avatar",
-            fallback: "JL"
+            alt: "Suchart Avatar",
+            fallback: "SP"
           }
         ],
         progress: 5,
@@ -146,20 +146,20 @@ export default function KanbanBoard() {
         title: "Implement blog search functionality",
         description: "Add a search bar to filter blog posts by title and tags.",
         priority: "medium",
-        assignee: "Olivia Davis",
+        assignee: "Apinya Thanaporn",
         dueDate: "2024-09-29",
         users: [
           {
-            name: "Olivia",
+            name: "Apinya",
             src: "https://bundui-images.netlify.app/avatars/07.png",
-            alt: "Olivia Avatar",
-            fallback: "OD"
+            alt: "Apinya Avatar",
+            fallback: "AT"
           },
           {
-            name: "Henry",
+            name: "Kittipong",
             src: "https://bundui-images.netlify.app/avatars/08.png",
-            alt: "Henry Avatar",
-            fallback: "HT"
+            alt: "Kittipong Avatar",
+            fallback: "KS"
           }
         ],
         progress: 0,
@@ -173,20 +173,20 @@ export default function KanbanBoard() {
         title: "Dark mode toggle implementation",
         description: "Allow users to switch between light and dark themes in settings.",
         priority: "high",
-        assignee: "Charlie Wilson",
+        assignee: "Chaiyaporn Saengtong",
         dueDate: "2024-09-18",
         users: [
           {
-            name: "Charlie",
+            name: "Chaiyaporn",
             src: "https://bundui-images.netlify.app/avatars/09.png",
-            alt: "Charlie Avatar",
-            fallback: "CW"
+            alt: "Chaiyaporn Avatar",
+            fallback: "CS"
           },
           {
-            name: "Ava",
+            name: "Busaba",
             src: "https://bundui-images.netlify.app/avatars/10.png",
-            alt: "Ava Avatar",
-            fallback: "AR"
+            alt: "Busaba Avatar",
+            fallback: "BR"
           }
         ],
         progress: 40,
@@ -198,20 +198,20 @@ export default function KanbanBoard() {
         title: "Database schema refactoring",
         description: "Normalize tables and improve query performance for large datasets.",
         priority: "medium",
-        assignee: "Liam Martinez",
+        assignee: "Nattapong Theerawat",
         dueDate: "2024-09-19",
         users: [
           {
-            name: "Liam",
+            name: "Nattapong",
             src: "https://bundui-images.netlify.app/avatars/11.png",
-            alt: "Liam Avatar",
-            fallback: "LM"
+            alt: "Nattapong Avatar",
+            fallback: "NT"
           },
           {
-            name: "Isabella",
+            name: "Nattaya",
             src: "https://bundui-images.netlify.app/avatars/12.png",
-            alt: "Isabella Avatar",
-            fallback: "IN"
+            alt: "Nattaya Avatar",
+            fallback: "NN"
           }
         ],
         progress: 55,
@@ -223,20 +223,20 @@ export default function KanbanBoard() {
         title: "Accessibility improvements",
         description: "Ensure the platform meets WCAG 2.1 AA accessibility standards.",
         priority: "low",
-        assignee: "Noah Taylor",
+        assignee: "Thaksin Boonyarit",
         dueDate: "2024-09-22",
         users: [
           {
-            name: "Noah",
+            name: "Thaksin",
             src: "https://bundui-images.netlify.app/avatars/13.png",
-            alt: "Noah Avatar",
-            fallback: "NT"
+            alt: "Thaksin Avatar",
+            fallback: "TB"
           },
           {
-            name: "Ella",
+            name: "Apinya",
             src: "https://bundui-images.netlify.app/avatars/14.png",
-            alt: "Ella Avatar",
-            fallback: "EL"
+            alt: "Apinya Avatar",
+            fallback: "AS"
           }
         ],
         progress: 35,
@@ -250,20 +250,20 @@ export default function KanbanBoard() {
         title: "Set up CI/CD pipeline",
         description: "Automate deployment process using GitHub Actions and Vercel.",
         priority: "high",
-        assignee: "Ethan Clark",
+        assignee: "Somchai Suwanprasert",
         dueDate: "2024-09-12",
         users: [
           {
-            name: "Ethan",
+            name: "Somchai",
             src: "https://bundui-images.netlify.app/avatars/15.png",
-            alt: "Ethan Avatar",
-            fallback: "EC"
+            alt: "Somchai Avatar",
+            fallback: "SS"
           },
           {
-            name: "Grace",
+            name: "Siriporn",
             src: "https://bundui-images.netlify.app/avatars/16.png",
-            alt: "Grace Avatar",
-            fallback: "GR"
+            alt: "Siriporn Avatar",
+            fallback: "SR"
           }
         ],
         progress: 100,
@@ -276,20 +276,20 @@ export default function KanbanBoard() {
         description:
           "Create project structure, install dependencies, and configure ESLint/Prettier.",
         priority: "medium",
-        assignee: "Harper Lewis",
+        assignee: "Kittipong Sukhum",
         dueDate: "2024-09-10",
         users: [
           {
-            name: "Harper",
+            name: "Kittipong",
             src: "https://bundui-images.netlify.app/avatars/17.png",
-            alt: "Harper Avatar",
-            fallback: "HL"
+            alt: "Kittipong Avatar",
+            fallback: "KS"
           },
           {
-            name: "Benjamin",
+            name: "Nattapong",
             src: "https://bundui-images.netlify.app/avatars/18.png",
-            alt: "Benjamin Avatar",
-            fallback: "BM"
+            alt: "Nattapong Avatar",
+            fallback: "NP"
           }
         ],
         progress: 100,

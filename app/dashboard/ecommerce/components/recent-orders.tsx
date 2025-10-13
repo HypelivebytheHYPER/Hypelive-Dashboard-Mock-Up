@@ -55,7 +55,7 @@ const orders: Order[] = [
   {
     id: 1023,
     customer: {
-      name: "Theodore Bell",
+      name: "Somchai Suwanprasert",
       image: `https://bundui-images.netlify.app/avatars/01.png`
     },
     product: {
@@ -67,7 +67,7 @@ const orders: Order[] = [
   {
     id: 2045,
     customer: {
-      name: "Amelia Grant",
+      name: "Siriporn Srisawat",
       image: `https://bundui-images.netlify.app/avatars/02.png`
     },
     product: {
@@ -79,7 +79,7 @@ const orders: Order[] = [
   {
     id: 3067,
     customer: {
-      name: "Eleanor Ward",
+      name: "Pranee Chaimongkol",
       image: `https://bundui-images.netlify.app/avatars/03.png`
     },
     product: {
@@ -91,7 +91,7 @@ const orders: Order[] = [
   {
     id: 4089,
     customer: {
-      name: "Henry Carter",
+      name: "Kittipong Sukhum",
       image: `https://bundui-images.netlify.app/avatars/04.png`
     },
     product: {
@@ -103,7 +103,7 @@ const orders: Order[] = [
   {
     id: 5102,
     customer: {
-      name: "Olivia Harris",
+      name: "Apinya Thanaporn",
       image: `https://bundui-images.netlify.app/avatars/05.png`
     },
     product: {
@@ -115,7 +115,7 @@ const orders: Order[] = [
   {
     id: 6123,
     customer: {
-      name: "James Robinson",
+      name: "Nattapong Rattanakul",
       image: `https://bundui-images.netlify.app/avatars/06.png`
     },
     product: {
@@ -127,7 +127,7 @@ const orders: Order[] = [
   {
     id: 7145,
     customer: {
-      name: "Sophia Martinez",
+      name: "Sumalee Wongsuk",
       image: `https://bundui-images.netlify.app/avatars/07.png`
     },
     product: {
@@ -139,7 +139,7 @@ const orders: Order[] = [
   {
     id: 8167,
     customer: {
-      name: "Liam Thompson",
+      name: "Chaiyaporn Saengtong",
       image: `https://bundui-images.netlify.app/avatars/08.png`
     },
     product: {
@@ -151,7 +151,7 @@ const orders: Order[] = [
   {
     id: 9189,
     customer: {
-      name: "Emma Wilson",
+      name: "Busaba Rojchanawong",
       image: `https://bundui-images.netlify.app/avatars/09.png`
     },
     product: {
@@ -163,7 +163,7 @@ const orders: Order[] = [
   {
     id: 10211,
     customer: {
-      name: "Noah Davis",
+      name: "Thaksin Boonyarit",
       image: `https://bundui-images.netlify.app/avatars/10.png`
     },
     product: {
@@ -175,7 +175,7 @@ const orders: Order[] = [
   {
     id: 11233,
     customer: {
-      name: "Ava Johnson",
+      name: "Nattaya Sanitwong",
       image: `https://bundui-images.netlify.app/avatars/01.png`
     },
     product: {
@@ -187,7 +187,7 @@ const orders: Order[] = [
   {
     id: 12255,
     customer: {
-      name: "William Brown",
+      name: "Wichai Lertsak",
       image: `https://bundui-images.netlify.app/avatars/02.png`
     },
     product: {
@@ -199,7 +199,7 @@ const orders: Order[] = [
   {
     id: 13277,
     customer: {
-      name: "Charlotte Miller",
+      name: "Apinya Maneerat",
       image: `https://bundui-images.netlify.app/avatars/03.png`
     },
     product: {
@@ -211,7 +211,7 @@ const orders: Order[] = [
   {
     id: 14299,
     customer: {
-      name: "Benjamin Taylor",
+      name: "Nattapong Charoensuk",
       image: `https://bundui-images.netlify.app/avatars/04.png`
     },
     product: {
@@ -223,7 +223,7 @@ const orders: Order[] = [
   {
     id: 15321,
     customer: {
-      name: "Mia Anderson",
+      name: "Sumalee Maneerat",
       image: `https://bundui-images.netlify.app/avatars/05.png`
     },
     product: {
@@ -235,7 +235,7 @@ const orders: Order[] = [
   {
     id: 16343,
     customer: {
-      name: "Elijah Thomas",
+      name: "Nattapong Wattana",
       image: `https://bundui-images.netlify.app/avatars/06.png`
     },
     product: {

@@ -17,7 +17,7 @@ interface Note {
 
 export default function Notes() {
   const [notes, setNotes] = React.useState<Note[]>([
-    { id: 1, date: new Date(2025, 10, 15), text: "Dr. Smith's surgery at 10 AM" },
+    { id: 1, date: new Date(2025, 10, 15), text: "Dr. Somporn's surgery at 10 AM" },
     { id: 2, date: new Date(2025, 4, 15), text: "Staff meeting at 2 PM" },
     { id: 3, date: new Date(2025, 2, 16), text: "New patient orientation" },
     { id: 4, date: new Date(2025, 1, 16), text: "Inventory check" },

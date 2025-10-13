@@ -278,7 +278,7 @@ export default function AIChatInterface() {
           </div>
 
           <h1 className="text-center text-2xl leading-normal font-medium lg:text-4xl">
-            Good Morning, Toby <br /> How Can I{" "}
+            Good Morning, Somchai <br /> How Can I{" "}
             <span className="bg-gradient-to-r from-purple-400 to-indigo-300 bg-clip-text text-transparent">
               Assist You Today?
             </span>

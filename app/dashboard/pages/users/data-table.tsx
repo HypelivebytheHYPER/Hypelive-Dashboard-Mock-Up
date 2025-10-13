@@ -70,7 +70,7 @@ export const columns: ColumnDef<User>[] = [
     cell: ({ row }) => (
       <div className="flex items-center gap-4">
         <Avatar>
-          <AvatarImage src={row.original.image} alt="shadcn ui kit" />
+          <AvatarImage src={row.original.image} alt="Hypelive Dashboard" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
         <div className="capitalize">{row.getValue("name")}</div>

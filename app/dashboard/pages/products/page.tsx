@@ -14,7 +14,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return generateMeta({
     title: "Product List",
     description:
-      "Product list page created using Tanstack Table. List or filter products. Built with shadcn/ui, Tailwind CSS and Next.js.",
+      "Product list page created using Tanstack Table. List or filter products. Built with Hypelive, Tailwind CSS and Next.js.",
     canonical: "/pages/products"
   });
 }

@@ -29,7 +29,7 @@ export function LatestActivity() {
               <BriefcaseBusinessIcon className="text-primary size-3" />
             </span>
             <h3 className="flex items-center font-semibold">
-              Shadcn UI Kit Application UI v2.0.0{" "}
+              Hypelive Dashboard Application UI v2.0.0{" "}
               <Badge variant="outline" className="ms-2">
                 Latest
               </Badge>
@@ -51,7 +51,7 @@ export function LatestActivity() {
             <span className="bg-muted absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full border">
               <BadgeCheckIcon className="text-primary size-3" />
             </span>
-            <h3 className="font-semibold">Shadcn UI Kit Figma v1.3.0</h3>
+            <h3 className="font-semibold">Hypelive Dashboard Figma v1.3.0</h3>
             <time className="text-muted-foreground flex items-center gap-1.5 text-sm leading-none">
               <ClockIcon className="size-3" /> Released on December 2nd, 2025
             </time>
@@ -64,7 +64,7 @@ export function LatestActivity() {
             <span className="bg-muted absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full border">
               <BriefcaseBusinessIcon className="text-primary size-3" />
             </span>
-            <h3 className="font-semibold">Shadcn UI Kit Library v1.2.2</h3>
+            <h3 className="font-semibold">Hypelive Dashboard Library v1.2.2</h3>
             <time className="text-muted-foreground flex items-center gap-1.5 text-sm leading-none">
               <ClockIcon className="size-3" /> Released on December 2nd, 2025
             </time>

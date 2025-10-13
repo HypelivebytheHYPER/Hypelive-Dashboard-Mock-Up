@@ -15,7 +15,7 @@ export async function generateMetadata() {
   return generateMeta({
     title: "Profile Page",
     description:
-      "You can use the profile page template to show user details. Built with shadcn/ui components.",
+      "You can use the profile page template to show user details. Built with Hypelive components.",
     canonical: "/pages/profile"
   });
 }

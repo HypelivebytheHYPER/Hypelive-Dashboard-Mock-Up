@@ -3,7 +3,7 @@
     "id": "4",
     "title": "Design homepage layout",
     "description": "Create wireframes and mockups for the homepage",
-    "assignedTo": ["Emily Carter", "Liam Walker"],
+    "assignedTo": ["Apinya Sanitwong", "Chaiyaporn Wongwan"],
     "comments": [
       {
         "id": "c3",
@@ -26,7 +26,7 @@
     "id": "5",
     "title": "Conduct user interviews",
     "description": "Schedule and conduct interviews with 5 users",
-    "assignedTo": ["Liam Walker"],
+    "assignedTo": ["Chaiyaporn Wongwan"],
     "comments": [],
     "status": "pending",
     "priority": "medium",

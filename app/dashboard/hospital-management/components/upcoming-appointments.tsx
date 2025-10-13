@@ -21,58 +21,58 @@ import { ExportButton } from "@/components/CardActionMenus";
 const appointments = [
   {
     id: 1,
-    patient: "John Swift",
+    patient: "Somchai Suwanprasert",
     date: "2023-06-01",
     time: "10:00 AM",
-    doctor: "Dr. Smith",
+    doctor: "Dr. Somporn",
     department: "Cardiology"
   },
   {
     id: 2,
-    patient: "Jane Smith",
+    patient: "Siriporn Sanitwong",
     date: "2023-06-02",
     time: "11:30 AM",
-    doctor: "Dr. Johnson",
+    doctor: "Dr. Somchai",
     department: "Neurology"
   },
   {
     id: 3,
-    patient: "Bob Wilson",
+    patient: "Wichai Theerawat",
     date: "2023-06-03",
     time: "2:00 PM",
-    doctor: "Dr. Brown",
+    doctor: "Dr. Wichai",
     department: "Oncology"
   },
   {
     id: 4,
-    patient: "Alice Taylor",
+    patient: "Apinya Thanaporn",
     date: "2023-06-04",
     time: "3:30 PM",
-    doctor: "Dr. Davis",
+    doctor: "Dr. Apinya",
     department: "Pediatrics"
   },
   {
     id: 5,
-    patient: "Bill Galon",
+    patient: "Nattapong Charoensuk",
     date: "2023-06-04",
     time: "2:30 PM",
-    doctor: "Dr. Karen",
+    doctor: "Dr. Siriporn",
     department: "Neurology"
   },
   {
     id: 6,
-    patient: "Mike Dall",
+    patient: "Kittipong Sukhum",
     date: "2023-06-04",
     time: "2:30 PM",
-    doctor: "Dr. Karen",
+    doctor: "Dr. Siriporn",
     department: "Cardiology"
   },
   {
     id: 7,
-    patient: "Bob Wilson",
+    patient: "Wichai Theerawat",
     date: "2023-06-03",
     time: "2:00 PM",
-    doctor: "Dr. Brown",
+    doctor: "Dr. Wichai",
     department: "Oncology"
   }
 ];

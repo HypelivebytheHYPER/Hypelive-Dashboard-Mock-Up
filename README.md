@@ -12,13 +12,13 @@
     Shadcn UI Kit is a comprehensive collection of ready-to-use admin dashboards, website templates, and customizable components.
     <br />
     <br />
-    <a href="https://shadcnuikit.com/">Home Page</a>
+    <a href="https://hypelive.studio/">Home Page</a>
     &nbsp;&bull;&nbsp;
-    <a href="https://shadcnuikit.com/dashboard/default">Dashboards</a>
+    <a href="https://hypelive.studio/dashboard/default">Dashboards</a>
     &nbsp;&bull;&nbsp;
-    <a href="https://shadcnuikit.com/templates">Templates</a>
+    <a href="https://hypelive.studio/templates">Templates</a>
     &nbsp;&bull;&nbsp;
-    <a href="https://free.shadcnuikit.com/">Free</a>
+    <a href="https://dashboard.hypelive.studio/">Free</a>
   </p>
     <br />
 </div>
@@ -33,7 +33,7 @@
 
 Get lifetime use of the premium version of Shadcn UI Kit with hundreds of UI components, dashboards, website templates and pre-built pages. Free updates, newly added components and templates are also included.
 
-| Free Version   | [Shadcn UI Kit PRO](https://shadcnuikit.com/pricing) |
+| Free Version   | [Shadcn UI Kit PRO](https://hypelive.studio/pricing) |
 | -------------- | ---------------------------------------------------- |
 | 1 Dashboard    | ✔ 10 Dashboards                                     |
 | 5+ Pages       | ✔ 50+ Pages                                         |
@@ -48,7 +48,7 @@ Get lifetime use of the premium version of Shadcn UI Kit with hundreds of UI com
 |                | ✔ Multiple Layouts                                  |
 |                | ✔ and more..                                        |
 
-✅ [Click here](https://shadcnuikit.com/pricing) to get the Shadcn UI Kit and review it in detail
+✅ [Click here](https://hypelive.studio/pricing) to get the Shadcn UI Kit and review it in detail
 
 ## ✉️ Contact
 

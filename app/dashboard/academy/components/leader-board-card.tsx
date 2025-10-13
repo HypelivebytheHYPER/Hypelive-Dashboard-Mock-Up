@@ -9,25 +9,25 @@ export function LeaderboardCard() {
   const topStudents = [
     {
       id: 1,
-      name: "Liam Smith",
+      name: "Chaiyaporn Saengtong",
       points: 5000,
       avatar: `https://bundui-images.netlify.app/avatars/01.png`
     },
     {
       id: 2,
-      name: "Emma Brown",
+      name: "Pranee Chaimongkol",
       points: 4800,
       avatar: `https://bundui-images.netlify.app/avatars/02.png`
     },
     {
       id: 3,
-      name: "Noah Johnson",
+      name: "Thaksin Boonyarit",
       points: 4600,
       avatar: `https://bundui-images.netlify.app/avatars/03.png`
     },
     {
       id: 4,
-      name: "Olivia Davis",
+      name: "Apinya Thanaporn",
       points: 4400,
       avatar: `https://bundui-images.netlify.app/avatars/04.png`
     }

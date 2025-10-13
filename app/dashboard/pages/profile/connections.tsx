@@ -17,7 +17,7 @@ const connections = [
     status: "connect"
   },
   {
-    name: "John Doe",
+    name: "Somchai Suwanprasert",
     email: "john.doe@example.com",
     avatar: `https://bundui-images.netlify.app/avatars/02.png`,
     status: "disconnect"
@@ -29,13 +29,13 @@ const connections = [
     status: "connect"
   },
   {
-    name: "Emily Martinez",
+    name: "Apinya Maneerat",
     email: "emily.martinez@example.com",
     avatar: `https://bundui-images.netlify.app/avatars/05.png`,
     status: "disconnect"
   },
   {
-    name: "James Wilson",
+    name: "Nattapong Charoensuk",
     email: "james.wilson@example.com",
     avatar: `https://bundui-images.netlify.app/avatars/06.png`,
     status: "disconnect"
@@ -68,7 +68,7 @@ export function Connections() {
             <div key={key} className="flex items-center justify-between">
               <div className="flex items-center gap-4">
                 <Avatar>
-                  <AvatarImage src={item.avatar} alt="@shadcn" />
+                  <AvatarImage src={item.avatar} alt="@hypelive" />
                   <AvatarFallback>{generateAvatarFallback(item.name)}</AvatarFallback>
                 </Avatar>
                 <div>

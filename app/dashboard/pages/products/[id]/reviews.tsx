@@ -23,7 +23,7 @@ const reviews = [
   },
   {
     id: 6,
-    name: "Michael B.",
+    name: "Kittipong B.",
     image: `https://bundui-images.netlify.app/avatars/03.png`,
     title: "Satisfied with my purchase",
     body: "I’m really happy with this purchase. The quality is great, and it works just as described. No complaints so far!",
@@ -55,7 +55,7 @@ const reviews = [
   },
   {
     id: 10,
-    name: "David L.",
+    name: "Wichai L.",
     image: `https://bundui-images.netlify.app/avatars/10.png`,
     title: "Highly functional and stylish",
     body: "This product is both functional and stylish. It fits perfectly with my needs, and I’m really impressed with the overall quality.",

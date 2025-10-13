@@ -22,7 +22,7 @@ export const mails = [
   },
   {
     id: "3e7c3f6d-bdf5-46ae-8d90-171300f27ae2",
-    name: "Bob Johnson",
+    name: "Suchart Punyakul",
     avatar: "https://bundui-images.netlify.app/avatars/08.png",
     email: "bobjohnson@example.com",
     subject: "Weekend Plans",
@@ -66,7 +66,7 @@ export const mails = [
   },
   {
     id: "17c0a96d-4415-42b1-8b4f-764efab57f66",
-    name: "David Lee",
+    name: "Wichai Lertsak",
     avatar: "https://bundui-images.netlify.app/avatars/04.png",
     email: "davidlee@example.com",
     subject: "New Project Idea",
@@ -110,7 +110,7 @@ export const mails = [
   },
   {
     id: "99a88f78-3eb4-4d87-87b7-7b15a49a0a05",
-    name: "Daniel Johnson",
+    name: "Anupong Chanthong",
     email: "danieljohnson@example.com",
     subject: "Feedback Request",
     text: "I'd like your feedback on the latest project deliverables. We've made significant progress, and I value your input to ensure we're on the right track.\n\nI've attached the deliverables for your review, and I'm particularly interested in any areas where you think we can further enhance the quality or efficiency.\n\nYour feedback is invaluable, and I appreciate your time and expertise. Let's work together to make this project a success.\n\nRegards, Daniel",

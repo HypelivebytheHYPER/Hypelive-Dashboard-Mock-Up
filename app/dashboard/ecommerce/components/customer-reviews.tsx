@@ -29,7 +29,7 @@ interface Review {
 const recentReviews: Review[] = [
   {
     id: "1",
-    author: "Sarah J.",
+    author: "Siriporn S.",
     date: "March 12, 2025",
     rating: 5,
     title: "Exceeded my expectations!",
