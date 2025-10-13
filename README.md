@@ -55,3 +55,5 @@ Get lifetime use of the premium version of Shadcn UI Kit with hundreds of UI com
 Toby Belhome - [@TobyBelhome](https://x.com/TobyBelhome)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Deployment test: GitHub-Vercel connection verification -->
