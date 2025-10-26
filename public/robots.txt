@@ -1,0 +1,14 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Disallow sensitive pages
+Disallow: /api/
+Disallow: /_next/
+Disallow: /dashboard/pages/settings
+
+# Sitemap location
+Sitemap: https://hypelive-dashboard-mockup-hypelives-projects.vercel.app/sitemap.xml
+
+# Crawl-delay for polite bots
+Crawl-delay: 1

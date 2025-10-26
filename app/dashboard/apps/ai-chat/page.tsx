@@ -1,5 +1,11 @@
 import { generateMeta } from "@/lib/utils";
-import AppRender from "@/app/dashboard/apps/ai-chat/app-render";
+import dynamic from "next/dynamic";
+
+// Dynamically import with SSR disabled to prevent build errors
+const AppRender = dynamic(() => import("@/app/dashboard/apps/ai-chat/app-render"), {
+  ssr: false,
+  loading: () => <div>Loading...</div>
+});
 
 export async function generateMetadata() {
   return generateMeta({

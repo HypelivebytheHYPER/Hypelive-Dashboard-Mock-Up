@@ -105,6 +105,7 @@ export const navItems: NavGroup[] = [
       },
       { title: "Sales", href: "/dashboard/sales", icon: BadgeDollarSign },
       { title: "CRM", href: "/dashboard/crm", icon: BarChart3 },
+      { title: "KOL Discovery", href: "/dashboard/kol-discovery", icon: Users, isNew: true },
       {
         title: "Website Analytics",
         href: "/dashboard/website-analytics",

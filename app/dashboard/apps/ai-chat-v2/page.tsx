@@ -1,8 +1,16 @@
 import { Metadata } from "next";
 import { generateMeta } from "@/lib/utils";
+import dynamic from "next/dynamic";
 
-import AIChatSidebar from "./components/ai-chat-sidebar";
-import AIChatInterface from "./components/ai-chat-interface";
+// Dynamically import with SSR disabled to prevent build errors
+const AIChatSidebar = dynamic(() => import("./components/ai-chat-sidebar"), {
+  ssr: false,
+  loading: () => <div>Loading...</div>
+});
+const AIChatInterface = dynamic(() => import("./components/ai-chat-interface"), {
+  ssr: false,
+  loading: () => <div>Loading...</div>
+});
 
 export async function generateMetadata(): Promise<Metadata> {
   return generateMeta({
