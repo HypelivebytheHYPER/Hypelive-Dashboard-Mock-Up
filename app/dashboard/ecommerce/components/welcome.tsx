@@ -7,7 +7,7 @@ export function EcommerceWelcomeCard() {
   return (
     <Card className="bg-muted relative overflow-hidden md:col-span-12 lg:col-span-4">
       <CardHeader>
-        <CardTitle className="text-2xl">Congratulations Toby! 🎉</CardTitle>
+        <CardTitle className="text-2xl">Congratulations! 🎉</CardTitle>
         <CardDescription>Best seller of the month</CardDescription>
       </CardHeader>
       <CardContent>

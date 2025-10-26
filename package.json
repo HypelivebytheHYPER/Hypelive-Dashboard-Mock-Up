@@ -1,6 +1,13 @@
 {
-  "name": "hypelive-dashboard-mockup",
-  "version": "0.1.0",
+  "name": "hypelive-dashboard",
+  "version": "1.0.0",
+  "description": "Professional KOL Management & Analytics Platform for Southeast Asia",
+  "author": "Hypelive Team <support@hypelive.studio>",
+  "homepage": "https://dashboard.hypelive.studio",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HypelivebytheHYPER/Hypelive-Dashboard-Mock-Up.git"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev --hostname 127.0.0.1 --port 3200",
