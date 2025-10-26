@@ -85,7 +85,7 @@ const AddTodoSheet: React.FC<AddTodoSheetProps> = ({ isOpen, onClose, editTodoId
       form.reset(defaultValues);
       setAssignedUsers([]);
     }
-  }, [editTodoId, todos, isOpen, form]);
+  }, [editTodoId, todos, isOpen, form, defaultValues]);
 
   const onSubmit = (data: TodoFormValues) => {
     // Ensure assignedTo is updated with the latest assignedUsers state

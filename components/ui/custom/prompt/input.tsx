@@ -14,14 +14,7 @@ type PromptInputContextType = {
   disabled?: boolean;
 };
 
-const PromptInputContext = createContext<PromptInputContextType>({
-  isLoading: false,
-  value: "",
-  setValue: () => {},
-  maxHeight: 240,
-  onSubmit: undefined,
-  disabled: false
-});
+const PromptInputContext = createContext<PromptInputContextType | null>(null);
 
 function usePromptInput() {
   const context = useContext(PromptInputContext);

@@ -43,12 +43,12 @@ export default function PosSystemMenu({
   const filteredBySearchTerm = React.useMemo(() => {
     if (!searchTerm) return null;
     return products.filter((p) => p.name.toLowerCase().includes(searchTerm.toLowerCase()));
-  }, [searchTerm]);
+  }, [searchTerm, products]);
 
   const filteredByCategory = React.useMemo(() => {
     if (!selectedCategory) return products;
     return products.filter((p) => p.category === selectedCategory);
-  }, [selectedCategory]);
+  }, [selectedCategory, products]);
 
   const filteredProducts = filteredBySearchTerm || filteredByCategory;
 

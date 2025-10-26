@@ -26,7 +26,7 @@ export default function PosSystemTableRender({ tableCategories, tables }: PosSys
       return tables;
     }
     return tables.filter((c) => c.category === selectedCategory);
-  }, [selectedCategory]);
+  }, [selectedCategory, tables]);
 
   return (
     <div className="flex flex-col md:flex-row">

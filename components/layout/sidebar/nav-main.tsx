@@ -196,6 +196,11 @@ export const navItems: NavGroup[] = [
         icon: Images
       },
       {
+        title: "ElevenLabs Templates",
+        href: "/dashboard/apps/elevenlabs",
+        icon: Speech
+      },
+      {
         title: "Text to Speech",
         href: "/dashboard/apps/text-to-speech",
         icon: Speech,
