@@ -1,0 +1,52 @@
+[
+  {
+    "name": "KOL Discovery (Phase 1 Optimized)",
+    "url": "https://hypelive-dashboard-mockup-hypelives-projects.vercel.app/dashboard/kol-discovery",
+    "timestamp": "2025-10-26T17:08:03.388Z",
+    "scores": {
+      "performance": 0,
+      "accessibility": 0,
+      "bestPractices": 0,
+      "seo": 0
+    },
+    "metrics": {}
+  },
+  {
+    "name": "Website Analytics",
+    "url": "https://hypelive-dashboard-mockup-hypelives-projects.vercel.app/dashboard/website-analytics",
+    "timestamp": "2025-10-26T17:08:13.726Z",
+    "scores": {
+      "performance": 85,
+      "accessibility": 72,
+      "bestPractices": 100,
+      "seo": 61
+    },
+    "metrics": {
+      "firstContentfulPaint": 979.15,
+      "largestContentfulPaint": 3974.1499999999996,
+      "totalBlockingTime": 59,
+      "cumulativeLayoutShift": 0,
+      "speedIndex": 4515.835343650501,
+      "timeToInteractive": 3989.1499999999996
+    }
+  },
+  {
+    "name": "Default Dashboard",
+    "url": "https://hypelive-dashboard-mockup-hypelives-projects.vercel.app/dashboard/default",
+    "timestamp": "2025-10-26T17:08:22.441Z",
+    "scores": {
+      "performance": 87,
+      "accessibility": 90,
+      "bestPractices": 96,
+      "seo": 69
+    },
+    "metrics": {
+      "firstContentfulPaint": 1013.782,
+      "largestContentfulPaint": 3859.782,
+      "totalBlockingTime": 69,
+      "cumulativeLayoutShift": 0,
+      "speedIndex": 2888.918791444891,
+      "timeToInteractive": 3859.782
+    }
+  }
+]
