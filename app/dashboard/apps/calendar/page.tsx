@@ -1,8 +1,25 @@
 import { generateMeta } from "@/lib/utils";
-import CalendarApp from "@/app/dashboard/apps/calendar/components/calendar-app";
-import CalendarSidebar from "@/app/dashboard/apps/calendar/components/calendar-sidebar";
-import EventSheet from "@/app/dashboard/apps/calendar/components/event-sheet";
+import dynamic from "next/dynamic";
 import React from "react";
+
+// Lazy load heavy FullCalendar component
+const CalendarApp = dynamic(
+  () => import("@/app/dashboard/apps/calendar/components/calendar-app"),
+  {
+    loading: () => <div className="flex h-96 items-center justify-center">Loading calendar...</div>,
+    ssr: false
+  }
+);
+
+const CalendarSidebar = dynamic(
+  () => import("@/app/dashboard/apps/calendar/components/calendar-sidebar"),
+  { ssr: true }
+);
+
+const EventSheet = dynamic(
+  () => import("@/app/dashboard/apps/calendar/components/event-sheet"),
+  { ssr: true }
+);
 
 export async function generateMetadata() {
   return generateMeta({

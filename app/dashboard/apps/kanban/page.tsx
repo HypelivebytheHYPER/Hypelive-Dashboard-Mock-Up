@@ -1,6 +1,11 @@
 import { generateMeta } from "@/lib/utils";
+import dynamic from "next/dynamic";
 
-import KanbanBoard from "./components/kanban-board";
+// Lazy load Kanban board with drag-and-drop library
+const KanbanBoard = dynamic(() => import("./components/kanban-board"), {
+  loading: () => <div className="flex h-96 items-center justify-center">Loading Kanban board...</div>,
+  ssr: false
+});
 
 export async function generateMetadata() {
   return generateMeta({
