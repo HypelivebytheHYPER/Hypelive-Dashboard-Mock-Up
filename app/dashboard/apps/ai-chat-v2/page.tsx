@@ -8,7 +8,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return generateMeta({
     title: "AI Chat V2",
     description:
-      "AI chatbot is an app ui template that allows users to interact with an AI for messaging and assistance. Built with Hypelive, Next.js and Tailwind CSS.",
+      "Professional AI chatbot application for interacting with artificial intelligence for messaging and assistance. Built with Hypelive, Next.js and Tailwind CSS.",
     canonical: "/apps/ai-chat-v2"
   });
 }

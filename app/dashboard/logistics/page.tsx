@@ -5,7 +5,7 @@ export async function generateMetadata() {
   return generateMeta({
     title: "Logistics Admin Dashboard",
     description:
-      "On the hotel admin dashboard, you can see your turnover, manage reservations, and view your customers. Built with Hypelive, Tailwind CSS, Next.js.",
+      "Professional logistics admin dashboard for managing shipments, tracking deliveries, and monitoring supply chain operations. Built with Hypelive, Tailwind CSS, Next.js.",
     canonical: "/logistics"
   });
 }
@@ -34,7 +34,7 @@ export default function Page() {
           </svg>
           Logistics Dashboard
         </h1>
-        <div className="lg:text-lg">Logistics admin dashboard template coming soon.</div>
+        <div className="lg:text-lg">Professional logistics admin dashboard coming soon.</div>
         <div className="text-muted-foreground flex items-center justify-center gap-2">
           <AlertCircleIcon className="h-4 w-4 text-orange-400" />
           This page is currently under construction.

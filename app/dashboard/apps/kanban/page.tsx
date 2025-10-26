@@ -6,7 +6,7 @@ export async function generateMetadata() {
   return generateMeta({
     title: "Kanban Board",
     description:
-      "Create a layout where you can easily manage your projects and tasks with the Kanban template. Built with Hypelive, React, Next.js and Tailwind CSS.",
+      "Professional Kanban board for managing projects and tasks with an intuitive drag-and-drop interface. Built with Hypelive, React, Next.js and Tailwind CSS.",
     canonical: "/apps/kanban"
   });
 }

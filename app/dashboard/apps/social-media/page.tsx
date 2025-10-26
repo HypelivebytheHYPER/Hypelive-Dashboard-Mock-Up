@@ -7,7 +7,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return generateMeta({
     title: "Social Media App",
     description:
-      "Social media app is a ui template used to connect, share and interact with users online. Built with Hypelive, Tailwind CSS, Next.js and React.",
+      "Professional social media application for connecting, sharing and interacting with users online. Built with Hypelive, Tailwind CSS, Next.js and React.",
     canonical: "/courses"
   });
 }
@@ -39,7 +39,7 @@ export default function Page() {
               <h1 className="text-xl">Social Media App</h1>
             </CardTitle>
             <CardDescription>
-              It is an application template used to connect, share and interact with users online.
+              Professional application for connecting, sharing and interacting with users online.
             </CardDescription>
           </CardHeader>
           <CardContent className="border-t pt-4">

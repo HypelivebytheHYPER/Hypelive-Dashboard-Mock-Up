@@ -5,7 +5,7 @@ export async function generateMetadata() {
   return generateMeta({
     title: "Note App",
     description:
-      "Add, organize and manage notes with the note app template. Built with Hypelive, Next.js and Tailwind CSS.",
+      "Professional note-taking application for adding, organizing and managing notes efficiently. Built with Hypelive, Next.js and Tailwind CSS.",
     canonical: "/apps/notes"
   });
 }

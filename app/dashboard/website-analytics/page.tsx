@@ -19,7 +19,7 @@ export async function generateMetadata() {
   return generateMeta({
     title: "Website Analytics Admin Dashboard",
     description:
-      "Website analytics admin dashboard template offers an efficient and flexible tool that allows to track websites traffic data, user interactions and performance analytics in detail with a modern, user-friendly and responsive interface.",
+      "Efficient website analytics admin dashboard for tracking website traffic data, user interactions and performance analytics in detail with a modern, user-friendly and responsive interface.",
     canonical: "/website-analytics"
   });
 }

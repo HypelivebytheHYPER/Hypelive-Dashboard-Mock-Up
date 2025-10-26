@@ -8,7 +8,7 @@ export async function generateMetadata() {
   return generateMeta({
     title: "Mail App",
     description:
-      "Easily organize incoming and outgoing mail with the mail management template. Built with Hypelive, Next.js and Tailwind CSS.",
+      "Professional mail management application for organizing incoming and outgoing messages. Built with Hypelive, Next.js and Tailwind CSS.",
     canonical: "/apps/mail"
   });
 }

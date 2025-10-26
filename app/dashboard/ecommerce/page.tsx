@@ -23,7 +23,7 @@ export async function generateMetadata() {
   return generateMeta({
     title: "Ecommerce Admin Dashboard",
     description:
-      "The e-commerce admin dashboard template is an admin template that you can use for your e-commerce website projects. Built with Hypelive, Tailwind CSS, Next.js.",
+      "Complete e-commerce admin dashboard for managing products, orders, customers, and analytics. Built with Hypelive, Tailwind CSS, Next.js.",
     canonical: "/ecommerce"
   });
 }

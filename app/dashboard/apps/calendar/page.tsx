@@ -8,7 +8,7 @@ export async function generateMetadata() {
   return generateMeta({
     title: "Calendar",
     description:
-      "Plan your events or tasks in an organized way with the Calendar app template. Built with Hypelive, Next.js and Tailwind CSS.",
+      "Professional calendar application for planning and organizing events and tasks efficiently. Built with Hypelive, Next.js and Tailwind CSS.",
     canonical: "/apps/calendar"
   });
 }

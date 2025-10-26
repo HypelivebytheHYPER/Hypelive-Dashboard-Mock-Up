@@ -13,7 +13,7 @@ export async function generateMetadata() {
   return generateMeta({
     title: "Dashboard - Hypelive Dashboard",
     description:
-      "The default dashboard template, built with React and Tailwind CSS, offers a sleek and efficient interface for monitoring key data and user interactions.",
+      "Professional dashboard built with React and Tailwind CSS, offering a sleek and efficient interface for monitoring key data and user interactions.",
     canonical: "/default"
   });
 }

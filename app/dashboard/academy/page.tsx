@@ -15,7 +15,7 @@ export async function generateMetadata() {
   return generateMeta({
     title: "Academy Admin Dashboard",
     description:
-      "Admin dashboard template for schools and educational institutions. Built with Hypelive, Tailwind CSS, Next.js.",
+      "Comprehensive admin dashboard for managing schools and educational institutions. Built with Hypelive, Tailwind CSS, Next.js.",
     canonical: "/academy"
   });
 }

@@ -9,7 +9,7 @@ export async function generateMetadata() {
   return generateMeta({
     title: "Chat App",
     description:
-      "A template to create chat and messaging apps for your customers or users. Built with Hypelive, Next.js and Tailwind CSS.",
+      "Professional chat and messaging application for real-time communication. Built with Hypelive, Next.js and Tailwind CSS.",
     canonical: "/apps/chat"
   });
 }

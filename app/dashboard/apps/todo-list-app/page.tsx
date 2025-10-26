@@ -16,7 +16,7 @@ export async function generateMetadata() {
   return generateMeta({
     title: "Todo List App",
     description:
-      "Organize your tasks, add new tasks and view task details with the to-do list app template. Built with Hypelive, Next.js and Tailwind CSS.",
+      "Professional to-do list application for organizing tasks, adding new items and viewing task details. Built with Hypelive, Next.js and Tailwind CSS.",
     canonical: "/apps/todo-list-app"
   });
 }

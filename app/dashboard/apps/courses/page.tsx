@@ -7,7 +7,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return generateMeta({
     title: "Courses",
     description:
-      "An app template used to browse, register for, and manage training courses. Built with Hypelive, Tailwind CSS, Next.js and React.",
+      "Professional course management application for browsing, registering, and managing training programs. Built with Hypelive, Tailwind CSS, Next.js and React.",
     canonical: "/courses"
   });
 }
@@ -39,7 +39,7 @@ export default function Page() {
               <h1 className="text-xl">Courses</h1>
             </CardTitle>
             <CardDescription>
-              An app template used to browse, register for, and manage training courses.
+              Professional application for browsing, registering, and managing training courses.
             </CardDescription>
           </CardHeader>
           <CardContent className="border-t pt-4">

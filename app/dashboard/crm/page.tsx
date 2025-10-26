@@ -16,7 +16,7 @@ export async function generateMetadata() {
   return generateMeta({
     title: "CRM Admin Dashboard",
     description:
-      "CRM admin dashboard template offers a streamlined and interactive interface for managing customer relationships, tracking sales, and analyzing performance metrics. Built with Hypelive, Tailwind CSS, Next.js.",
+      "Streamlined CRM admin dashboard with an interactive interface for managing customer relationships, tracking sales, and analyzing performance metrics. Built with Hypelive, Tailwind CSS, Next.js.",
     canonical: "/crm"
   });
 }

@@ -18,7 +18,7 @@ export async function generateMetadata() {
   return generateMeta({
     title: "Hospital Admin Management",
     description:
-      "The hospital admin dashboard is a template for managing and analyzing hospital data and monitoring operational processes.",
+      "Comprehensive hospital admin dashboard for managing and analyzing hospital data and monitoring operational processes in real-time.",
     canonical: "/hospital-management"
   });
 }

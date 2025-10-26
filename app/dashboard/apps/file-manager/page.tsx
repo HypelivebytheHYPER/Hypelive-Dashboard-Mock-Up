@@ -6,7 +6,7 @@ export async function generateMetadata() {
   return generateMeta({
     title: "File Manager App",
     description:
-      "A file manager app is an app template used to browse, organize and manage files and folders. Built with Hypelive, React, Next.js and Tailwind CSS.",
+      "Professional file manager application for browsing, organizing and managing files and folders. Built with Hypelive, React, Next.js and Tailwind CSS.",
     canonical: "/apps/file-manager"
   });
 }

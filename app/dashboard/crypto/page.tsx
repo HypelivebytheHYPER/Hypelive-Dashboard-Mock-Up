@@ -13,7 +13,7 @@ export async function generateMetadata() {
   return generateMeta({
     title: "Crypto Admin Dashboard",
     description:
-      "The crypto admin dashboard is a template for effectively tracking cryptocurrency prices, market trends and portfolio performance. Built with Hypelive.",
+      "Professional cryptocurrency dashboard for tracking prices, market trends and portfolio performance in real-time. Built with Hypelive.",
     canonical: "/crypto"
   });
 }

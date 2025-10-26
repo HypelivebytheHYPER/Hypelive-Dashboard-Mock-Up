@@ -5,8 +5,8 @@ export async function generateMetadata() {
   return generateMeta({
     title: "500 Page - Hypelive Dashboard",
     description:
-      "This is an example of a template for 500 error pages. Built with technologies like Tailwind CSS, Next.js, React and Hypelive.",
-    canonical: "/pages/error/404"
+      "Server error display for Hypelive Dashboard. Built with Tailwind CSS, Next.js, React, and modern web technologies.",
+    canonical: "/pages/error/500"
   });
 }
 

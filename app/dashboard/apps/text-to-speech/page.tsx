@@ -7,7 +7,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return generateMeta({
     title: "Text to Speech",
     description:
-      "Text to speech app is a ui template that converts written text into spoken audio. Built with Hypelive, Tailwind CSS, Next.js and React.",
+      "Professional text to speech application for converting written text into spoken audio. Built with Hypelive, Tailwind CSS, Next.js and React.",
     canonical: "/text-to-speech"
   });
 }
@@ -39,7 +39,7 @@ export default function Page() {
               <h1 className="text-xl">Text to Speech</h1>
             </CardTitle>
             <CardDescription>
-              Text to speech app is a ui template that converts written text into spoken audio.
+              Professional application for converting written text into spoken audio.
             </CardDescription>
           </CardHeader>
           <CardContent className="border-t pt-4">

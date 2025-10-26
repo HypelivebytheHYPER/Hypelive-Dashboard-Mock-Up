@@ -7,7 +7,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return generateMeta({
     title: "Hotel Admin Dashboard",
     description:
-      "On the hotel admin dashboard, you can see your turnover, manage reservations, and view your customers. Built with Hypelive, Tailwind CSS, Next.js.",
+      "Professional hotel admin dashboard for managing reservations, tracking turnover, and viewing customer information. Built with Hypelive, Tailwind CSS, Next.js.",
     canonical: "/hotel"
   });
 }
@@ -39,7 +39,7 @@ export default function Page() {
               <h1 className="text-xl">Hotel Dashboard</h1>
             </CardTitle>
             <CardDescription>
-              It is a template used to manage reservations, rooms, guests, and hotel operations.
+              Comprehensive dashboard for managing reservations, rooms, guests, and hotel operations.
             </CardDescription>
           </CardHeader>
           <CardContent className="border-t pt-4">

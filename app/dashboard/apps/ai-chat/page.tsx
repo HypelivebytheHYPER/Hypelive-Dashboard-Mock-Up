@@ -5,7 +5,7 @@ export async function generateMetadata() {
   return generateMeta({
     title: "AI Chat App",
     description:
-      "A template you can use to create applications that allow you to chat with artificial intelligence. Built with Hypelive, Next.js and Tailwind CSS.",
+      "Professional AI chat application for conversing with artificial intelligence. Built with Hypelive, Next.js and Tailwind CSS.",
     canonical: "/apps/ai-chat"
   });
 }
