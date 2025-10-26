@@ -3,6 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { generateMeta } from "@/lib/utils";
 import { GithubIcon } from "lucide-react";
+import Image from "next/image";
 
 export async function generateMetadata() {
   return generateMeta({
@@ -16,8 +17,8 @@ export async function generateMetadata() {
 export default function LoginPageV1() {
   return (
     <div className="flex pb-8 lg:h-screen lg:pb-0">
-      <div className="hidden w-1/2 bg-gray-100 lg:block">
-        <img src={`/images/cover.png`} alt="Login visual" className="h-full w-full object-cover" />
+      <div className="hidden w-1/2 bg-gray-100 lg:block relative">
+        <Image src={`/images/cover.png`} alt="Register visual" fill className="object-cover" priority />
       </div>
 
       <div className="flex w-full items-center justify-center lg:w-1/2">

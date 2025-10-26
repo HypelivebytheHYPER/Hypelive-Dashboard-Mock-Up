@@ -300,6 +300,7 @@ function KanbanRoot<T>(props: KanbanRootProps<T>) {
       if (event.activatorEvent.defaultPrevented) return;
       setActiveId(event.active.id);
     },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [kanbanProps.onDragStart]
   );
 
@@ -352,6 +353,7 @@ function KanbanRoot<T>(props: KanbanRootProps<T>) {
         hasMovedRef.current = true;
       }
     },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [value, getColumn, getItemValue, onValueChange, kanbanProps.onDragOver]
   );
 
@@ -428,6 +430,7 @@ function KanbanRoot<T>(props: KanbanRootProps<T>) {
       setActiveId(null);
       hasMovedRef.current = false;
     },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [value, getColumn, getItemValue, onValueChange, onMove, kanbanProps.onDragEnd]
   );
 
@@ -440,6 +443,7 @@ function KanbanRoot<T>(props: KanbanRootProps<T>) {
       setActiveId(null);
       hasMovedRef.current = false;
     },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [kanbanProps.onDragCancel]
   );
 
@@ -710,6 +714,7 @@ const KanbanColumn = React.forwardRef<HTMLDivElement, KanbanColumnProps>((props,
   const items = React.useMemo(() => {
     const items = context.items[value] ?? [];
     return items.map((item) => context.getItemValue(item));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [context.items, value, context.getItemValue]);
 
   const columnContext = React.useMemo<KanbanColumnContextValue>(

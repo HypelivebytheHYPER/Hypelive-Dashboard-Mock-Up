@@ -5,6 +5,7 @@ import Link from "next/link";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { toast } from "sonner";
+import Image from "next/image";
 import {
   AlertCircleIcon,
   ChevronLeft,
@@ -246,24 +247,28 @@ export default function AddProductForm() {
                             </div>
 
                             <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-                              {files.map((file) => (
-                                <div
-                                  key={file.id}
-                                  className="bg-accent relative aspect-square rounded-md border">
-                                  <img
-                                    src={file.preview}
-                                    alt={file.file.name}
-                                    className="size-full rounded-[inherit] object-cover"
-                                  />
-                                  <Button
-                                    type="button"
-                                    onClick={() => removeFile(file.id)}
-                                    size="icon"
-                                    className="border-background focus-visible:border-background absolute -top-2 -right-2 size-6 rounded-full border-2 shadow-none">
-                                    <XIcon className="size-3.5" />
-                                  </Button>
-                                </div>
-                              ))}
+                              {files.map(
+                                (file) =>
+                                  file.preview && (
+                                    <div
+                                      key={file.id}
+                                      className="bg-accent relative aspect-square rounded-md border">
+                                      <Image
+                                        src={file.preview}
+                                        alt={file.file.name}
+                                        fill
+                                        className="rounded-[inherit] object-cover"
+                                      />
+                                      <Button
+                                        type="button"
+                                        onClick={() => removeFile(file.id)}
+                                        size="icon"
+                                        className="border-background focus-visible:border-background absolute -top-2 -right-2 size-6 rounded-full border-2 shadow-none">
+                                        <XIcon className="size-3.5" />
+                                      </Button>
+                                    </div>
+                                  )
+                              )}
                             </div>
                           </div>
                         ) : (

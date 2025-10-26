@@ -1,5 +1,6 @@
 import React from "react";
 import { AlertCircleIcon, ImageIcon, Plus, UploadIcon, XIcon } from "lucide-react";
+import Image from "next/image";
 
 import { ProductCategory } from "@/app/dashboard/apps/pos-system/store";
 import { useFileUpload } from "@/hooks/use-file-upload";
@@ -102,9 +103,10 @@ export default function AddProductDialog({ categories }: AddProductDialog) {
                   <input {...getInputProps()} className="sr-only" aria-label="Upload image file" />
                   {previewUrl ? (
                     <div className="absolute inset-0 flex items-center justify-center p-4">
-                      <img
+                      <Image
                         src={previewUrl}
-                        className="mx-auto max-h-full rounded object-contain"
+                        fill
+                        className="rounded object-contain p-4"
                         alt={files[0]?.file?.name || "Uploaded image"}
                       />
                     </div>

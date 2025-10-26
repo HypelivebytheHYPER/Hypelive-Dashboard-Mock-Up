@@ -1,6 +1,7 @@
 import React from "react";
 import { Download, Eye, Trash2 } from "lucide-react";
 import { toast } from "sonner";
+import Image from "next/image";
 
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -43,10 +44,11 @@ export default function ImageItem({ image, onDeleteImage }: ImageItemProps) {
         key={image.id}
         className="group bg-card relative overflow-hidden rounded-lg border transition-all duration-300 hover:shadow-md">
         <div className="relative aspect-square overflow-hidden">
-          <img
+          <Image
             src={image.url}
             alt={image.prompt}
-            className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+            fill
+            className="object-cover transition-transform duration-300 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-black/0 transition-colors duration-300 group-hover:bg-black/20" />
 

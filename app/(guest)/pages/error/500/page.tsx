@@ -1,4 +1,5 @@
 import { generateMeta } from "@/lib/utils";
+import Image from "next/image";
 
 export async function generateMetadata() {
   return generateMeta({
@@ -22,10 +23,11 @@ export default function Error404() {
         </p>
       </div>
 
-      <div className="col-span-1 hidden lg:block">
-        <img
-          src={`${process.env.DASHBOARD_BASE_URL}/images/500.svg`}
-          alt="Login visual"
+      <div className="col-span-1 hidden lg:block relative h-full">
+        <Image
+          src="/images/500.svg"
+          alt="500 server error illustration"
+          fill
           className="object-contain"
         />
       </div>

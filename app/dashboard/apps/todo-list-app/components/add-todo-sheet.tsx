@@ -50,15 +50,18 @@ const AddTodoSheet: React.FC<AddTodoSheetProps> = ({ isOpen, onClose, editTodoId
   const [assignedUsers, setAssignedUsers] = React.useState<string[]>([]);
   const [newUser, setNewUser] = React.useState("");
 
-  const defaultValues = {
-    title: "",
-    description: "",
-    assignedTo: [],
-    status: EnumTodoStatus.Pending,
-    priority: EnumTodoPriority.Medium,
-    dueDate: undefined,
-    reminderDate: undefined
-  };
+  const defaultValues = React.useMemo(
+    () => ({
+      title: "",
+      description: "",
+      assignedTo: [],
+      status: EnumTodoStatus.Pending,
+      priority: EnumTodoPriority.Medium,
+      dueDate: undefined,
+      reminderDate: undefined
+    }),
+    []
+  );
 
   const form = useForm<TodoFormValues>({
     resolver: zodResolver(todoFormSchema),
