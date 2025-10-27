@@ -32,6 +32,9 @@ export function KOLDiscoveryClient({ children }: KOLDiscoveryClientProps) {
     page_size: 1000
   });
 
+  // Memoize the rendered children to avoid re-rendering
+  const renderedChildren = React.useMemo(() => children(filters), [children, filters]);
+
   return (
     <>
       {/* Header with gradient background */}
@@ -68,7 +71,7 @@ export function KOLDiscoveryClient({ children }: KOLDiscoveryClientProps) {
       <AdvancedFilters onFilterChange={setFilters} activeFilters={filters} />
 
       {/* Render children with filters */}
-      {children(filters)}
+      {renderedChildren}
 
       {/* Smart Search Dialog */}
       <SmartSearchDialog
