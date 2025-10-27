@@ -16,6 +16,11 @@ export const page_routes: PageRoutesType[] = [
     title: "Dashboards",
     items: [
       {
+        title: "KOL Discovery",
+        href: "/dashboard/kol-discovery",
+        icon: "Users2"
+      },
+      {
         title: "Default",
         href: "/dashboard/default",
         icon: "LayoutDashboard"
