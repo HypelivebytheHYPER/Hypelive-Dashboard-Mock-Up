@@ -13,7 +13,7 @@ import * as chromeLauncher from 'chrome-launcher';
 import fs from 'fs';
 import path from 'path';
 
-const PRODUCTION_URL = 'https://hypelive-dashboard-mockup-hypelives-projects.vercel.app';
+const PRODUCTION_URL = 'https://dashboard.hypelive.studio';
 
 const PAGES_TO_AUDIT = [
   {
@@ -27,6 +27,14 @@ const PAGES_TO_AUDIT = [
   {
     path: '/dashboard/default',
     name: 'Default Dashboard',
+  },
+  {
+    path: '/dashboard/apps/calendar',
+    name: 'Calendar App (Phase 3 - Dynamic Import)',
+  },
+  {
+    path: '/dashboard/apps/kanban',
+    name: 'Kanban Board (Phase 3 - Dynamic Import)',
   },
 ];
 
