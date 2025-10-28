@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     email: false,
     address: false
   },
-  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "https://hypelive-dashboard-mockup-hypelives-projects.vercel.app"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "https://dashboard.hypelive.studio"),
   openGraph: {
     type: "website",
     locale: "en_US",
