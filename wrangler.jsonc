@@ -1,0 +1,29 @@
+{
+  "name": "hypelive-dashboard",
+  "compatibility_date": "2025-10-28",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": ".open-next/worker.js",
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "kv_namespaces": [
+    {
+      "binding": "CACHE",
+      "id": "515253384b1148dd8213b2776c68e2c6",
+      "preview_id": "9ff6d42407ca48bb8a859aac41c9e5d0"
+    }
+  ],
+  "vars": {
+    "ENVIRONMENT": "production",
+    "NEXT_PUBLIC_APP_URL": "https://dashboard.hypelive.studio",
+    "NEXT_PUBLIC_API_URL": "https://larksuite-hype-server.hypelive.workers.dev"
+  },
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  },
+  "limits": {
+    "cpu_ms": 50
+  }
+}

@@ -1,0 +1,90 @@
+[
+  {
+    "name": "KOL Discovery (Phase 1 Optimized)",
+    "url": "https://dashboard.hypelive.studio/dashboard/kol-discovery",
+    "timestamp": "2025-10-26T23:57:00.038Z",
+    "scores": {
+      "performance": 0,
+      "accessibility": 0,
+      "bestPractices": 0,
+      "seo": 0
+    },
+    "metrics": {}
+  },
+  {
+    "name": "Website Analytics",
+    "url": "https://dashboard.hypelive.studio/dashboard/website-analytics",
+    "timestamp": "2025-10-26T23:57:08.113Z",
+    "scores": {
+      "performance": 96,
+      "accessibility": 72,
+      "bestPractices": 100,
+      "seo": 92
+    },
+    "metrics": {
+      "firstContentfulPaint": 1128.9565,
+      "largestContentfulPaint": 2621.9565000000002,
+      "totalBlockingTime": 28,
+      "cumulativeLayoutShift": 0,
+      "speedIndex": 2317.2334338816645,
+      "timeToInteractive": 4025.4565000000002
+    }
+  },
+  {
+    "name": "Default Dashboard",
+    "url": "https://dashboard.hypelive.studio/dashboard/default",
+    "timestamp": "2025-10-26T23:57:15.597Z",
+    "scores": {
+      "performance": 96,
+      "accessibility": 90,
+      "bestPractices": 96,
+      "seo": 100
+    },
+    "metrics": {
+      "firstContentfulPaint": 965.94,
+      "largestContentfulPaint": 2760.94,
+      "totalBlockingTime": 49,
+      "cumulativeLayoutShift": 0,
+      "speedIndex": 2501.151966162253,
+      "timeToInteractive": 3835.4400000000005
+    }
+  },
+  {
+    "name": "Calendar App (Phase 3 - Dynamic Import)",
+    "url": "https://dashboard.hypelive.studio/dashboard/apps/calendar",
+    "timestamp": "2025-10-26T23:57:23.200Z",
+    "scores": {
+      "performance": 88,
+      "accessibility": 95,
+      "bestPractices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "firstContentfulPaint": 984.465,
+      "largestContentfulPaint": 3841.965,
+      "totalBlockingTime": 32,
+      "cumulativeLayoutShift": 0,
+      "speedIndex": 3246.8836746507086,
+      "timeToInteractive": 3843.5150000000003
+    }
+  },
+  {
+    "name": "Kanban Board (Phase 3 - Dynamic Import)",
+    "url": "https://dashboard.hypelive.studio/dashboard/apps/kanban",
+    "timestamp": "2025-10-26T23:57:30.719Z",
+    "scores": {
+      "performance": 93,
+      "accessibility": 86,
+      "bestPractices": 96,
+      "seo": 100
+    },
+    "metrics": {
+      "firstContentfulPaint": 1009.316,
+      "largestContentfulPaint": 3126.316,
+      "totalBlockingTime": 23,
+      "cumulativeLayoutShift": 0,
+      "speedIndex": 2547.1249119438817,
+      "timeToInteractive": 3128.016
+    }
+  }
+]
