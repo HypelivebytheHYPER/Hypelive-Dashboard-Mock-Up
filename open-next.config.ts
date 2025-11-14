@@ -1,8 +1,4 @@
 import { defineCloudflareConfig } from "@opennextjs/cloudflare";
 
-export default defineCloudflareConfig({
-  experimental: {
-    // Use KV namespace for ISR cache
-    incrementalCache: "cloudflare-kv"
-  }
-});
+// Basic configuration - KV namespace for ISR caching is configured in wrangler.jsonc
+export default defineCloudflareConfig();

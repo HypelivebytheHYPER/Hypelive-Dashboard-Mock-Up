@@ -1,6 +1,8 @@
 /**
  * KOL Discovery Page - Server Component
  * Fetches data on the server for optimal performance
+ * Note: dynamic="force-dynamic" removed due to conflict with cacheComponents in next.config.ts
+ * Cache Components handles dynamic rendering automatically
  */
 
 import { Suspense } from "react";
@@ -52,29 +54,25 @@ export default function KOLDiscoveryPage() {
   return (
     <div className="space-y-6">
       <KOLDiscoveryClient>
-        {(filters) => (
-          <>
-            {/* Stat Cards with Suspense for streaming */}
-            <Suspense fallback={<StatCardsSkeleton />}>
-              <StatCards />
-            </Suspense>
+        {/* Stat Cards with Suspense for streaming */}
+        <Suspense fallback={<StatCardsSkeleton />}>
+          <StatCards />
+        </Suspense>
 
-            {/* Audience Demographics - Full Width */}
-            <AudienceDemographicsCard />
+        {/* Audience Demographics - Full Width */}
+        <AudienceDemographicsCard />
 
-            {/* Charts & Visualizations with better layout */}
-            <div className="grid gap-6 xl:grid-cols-3">
-              <KOLsByLocationCard />
-              <RecentCampaignsCard />
-              <CollaborationPipelineCard />
-            </div>
+        {/* Charts & Visualizations with better layout */}
+        <div className="grid gap-6 xl:grid-cols-3">
+          <KOLsByLocationCard />
+          <RecentCampaignsCard />
+          <CollaborationPipelineCard />
+        </div>
 
-            {/* Main KOL Table with enhanced card */}
-            <div className="rounded-lg border bg-card shadow-sm">
-              <KOLsTableCard filters={filters} />
-            </div>
-          </>
-        )}
+        {/* Main KOL Table with enhanced card */}
+        <div className="rounded-lg border bg-card shadow-sm">
+          <KOLsTableCard />
+        </div>
       </KOLDiscoveryClient>
     </div>
   );

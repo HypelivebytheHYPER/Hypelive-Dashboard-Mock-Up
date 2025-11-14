@@ -1,8 +1,9 @@
-import { Metadata } from "next";
-import { generateMeta } from "@/lib/utils";
+"use client";
+
 import dynamic from "next/dynamic";
 
 // Dynamically import with SSR disabled to prevent build errors
+// Note: Converted to Client Component to support ssr: false with dynamic imports
 const AIChatSidebar = dynamic(() => import("./components/ai-chat-sidebar"), {
   ssr: false,
   loading: () => <div>Loading...</div>
@@ -12,15 +13,7 @@ const AIChatInterface = dynamic(() => import("./components/ai-chat-interface"), 
   loading: () => <div>Loading...</div>
 });
 
-export async function generateMetadata(): Promise<Metadata> {
-  return generateMeta({
-    title: "AI Chat V2",
-    description:
-      "Professional AI chatbot application for interacting with artificial intelligence for messaging and assistance. Built with Hypelive, Next.js and Tailwind CSS.",
-    canonical: "/apps/ai-chat-v2"
-  });
-}
-
+// Note: Metadata moved to layout.tsx since this is now a Client Component
 export default function Page() {
   return (
     <div className="relative flex h-[calc(100vh-var(--header-height)-3rem)] rounded-md lg:border">

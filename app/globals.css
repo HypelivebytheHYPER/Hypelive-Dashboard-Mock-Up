@@ -1,0 +1,498 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Next.js 16 Optimizations */
+
+/* Custom scrollbar with better performance */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-muted;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-muted-foreground rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-muted-foreground/80;
+}
+
+/* Smooth transitions optimized for React 19 */
+* {
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Focus styles optimized for accessibility */
+:focus-visible {
+  outline: 2px solid hsl(var(--ring));
+  outline-offset: 2px;
+}
+
+/* Animation utilities for React 19 View Transitions */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.3s ease-out;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite linear;
+  background: linear-gradient(to right, transparent 0%, rgba(255,255,255,0.1) 50%, transparent 100%);
+  background-size: 2000px 100%;
+}
+
+/* Loading skeleton optimized for Next.js 16 */
+@keyframes pulse-optimized {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+.animate-pulse-optimized {
+  animation: pulse-optimized 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Chart container styles optimized for Recharts */
+.recharts-wrapper {
+  @apply w-full h-full;
+}
+
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  @apply stroke-border;
+}
+
+.recharts-text {
+  @apply fill-muted-foreground;
+}
+
+.recharts-tooltip-wrapper {
+  @apply rounded-lg border bg-card text-card-foreground shadow-lg;
+}
+
+/* Dashboard specific styles optimized for performance */
+.dashboard-card {
+  @apply bg-card border-border rounded-lg shadow-sm transition-all duration-200 hover:shadow-md;
+}
+
+.dashboard-header {
+  @apply bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-10;
+}
+
+/* Responsive utilities optimized for mobile-first */
+@media (max-width: 768px) {
+  .responsive-grid {
+    @apply grid-cols-1;
+  }
+  
+  .dashboard-metrics {
+    @apply space-y-4;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .responsive-grid {
+    @apply grid-cols-2;
+  }
+}
+
+@media (min-width: 1025px) {
+  .responsive-grid {
+    @apply grid-cols-3;
+  }
+}
+
+/* Status indicators optimized for accessibility - HypeUI themed */
+.status-indicator {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium transition-colors;
+}
+
+.status-success {
+  background-color: hsl(var(--success) / 0.15);
+  color: hsl(var(--success));
+  border: 1px solid hsl(var(--success) / 0.3);
+}
+
+.status-warning {
+  background-color: hsl(var(--warning) / 0.15);
+  color: hsl(var(--warning));
+  border: 1px solid hsl(var(--warning) / 0.3);
+}
+
+.status-error {
+  background-color: hsl(var(--destructive) / 0.15);
+  color: hsl(var(--destructive));
+  border: 1px solid hsl(var(--destructive) / 0.3);
+}
+
+.status-info {
+  background-color: hsl(var(--primary) / 0.15);
+  color: hsl(var(--primary));
+  border: 1px solid hsl(var(--primary) / 0.3);
+}
+
+/* Performance optimizations for Next.js 16 */
+.performance-optimized {
+  contain: layout style paint;
+  content-visibility: auto;
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .border {
+    border-width: 2px;
+  }
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  .print-optimized {
+    color: black !important;
+    background: white !important;
+  }
+}
+
+/* Custom properties for Next.js 16 optimizations */
+:root {
+  --animation-duration: 0.2s;
+  --transition-timing: ease-in-out;
+}
+
+/* ============================================
+   HypeUI Color System - Nord-Inspired Theme
+   ============================================ */
+
+/* Dark Mode (Default) - Nord-Inspired */
+:root {
+  /* Base colors */
+  --background: 222 16% 21%;        /* #2E3440 - Deep blue-gray */
+  --foreground: 218 27% 94%;        /* #ECEFF4 - Snow white */
+
+  /* Surface colors */
+  --card: 220 16% 26%;              /* #3B4252 - Card surface */
+  --card-foreground: 218 27% 94%;
+
+  --popover: 220 16% 26%;
+  --popover-foreground: 218 27% 94%;
+
+  /* Accent colors - Frost teal */
+  --primary: 193 43% 67%;           /* #88C0D0 - Distinctive teal */
+  --primary-foreground: 220 16% 22%;
+
+  --secondary: 220 17% 32%;         /* #434C5E - Secondary surface */
+  --secondary-foreground: 218 27% 94%;
+
+  --accent: 179 25% 65%;            /* #8FBCBB - Complementary teal */
+  --accent-foreground: 220 16% 22%;
+
+  /* Semantic colors */
+  --success: 92 28% 65%;            /* #A3BE8C - Muted green */
+  --warning: 40 71% 73%;            /* #EBCB8B - Warm yellow */
+  --destructive: 354 42% 56%;       /* #BF616A - Soft red */
+  --destructive-foreground: 218 27% 94%;
+
+  /* UI elements */
+  --border: 220 17% 32%;            /* #434C5E */
+  --input: 220 17% 32%;
+  --ring: 193 43% 67%;              /* Match primary */
+
+  --muted: 220 16% 26%;
+  --muted-foreground: 219 28% 88%;
+
+  /* Radius */
+  --radius: 0.75rem;                /* 12px - More distinctive than default */
+}
+
+/* Light Mode Override */
+.light {
+  color-scheme: light;
+
+  --background: 218 27% 94%;        /* #ECEFF4 - Snow white */
+  --foreground: 220 16% 22%;        /* #2E3440 - Deep blue-gray */
+
+  --card: 0 0% 100%;                /* Pure white cards */
+  --card-foreground: 220 16% 22%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 220 16% 22%;
+
+  --primary: 210 34% 63%;           /* #5E81AC - Darker blue for light mode */
+  --primary-foreground: 218 27% 94%;
+
+  --secondary: 218 27% 92%;         /* #E5E9F0 - Light gray */
+  --secondary-foreground: 220 16% 22%;
+
+  --accent: 193 43% 67%;            /* #88C0D0 - Keep teal */
+  --accent-foreground: 220 16% 22%;
+
+  --success: 92 28% 50%;            /* Darker green for contrast */
+  --warning: 40 71% 60%;            /* Darker yellow for contrast */
+  --destructive: 354 42% 48%;       /* Darker red for contrast */
+  --destructive-foreground: 218 27% 94%;
+
+  --border: 218 27% 87%;            /* #D8DEE9 - Light border */
+  --input: 218 27% 87%;
+  --ring: 210 34% 63%;
+
+  --muted: 218 27% 92%;
+  --muted-foreground: 220 17% 38%;
+}
+
+/* Dark mode optimizations */
+.dark {
+  color-scheme: dark;
+}
+
+/* ============================================
+   HypeUI Typography System
+   ============================================ */
+
+/* Apply display font to headings and dashboard titles */
+h1, h2, h3, h4, h5, h6,
+.font-display,
+.dashboard-header h1,
+.dashboard-header h2,
+.card-title,
+.metric-title {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Ensure body text uses body font */
+body, p, span, div,
+.font-body,
+input, textarea, select, button {
+  font-family: var(--font-body), sans-serif;
+}
+
+/* Display font variations */
+.font-display-light {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+}
+
+/* Container queries for responsive design (future enhancement) */
+@container (min-width: 400px) {
+  .container-responsive {
+    @apply grid-cols-2;
+  }
+}
+
+/* Scroll-driven animations (future enhancement) */
+@supports (animation-timeline: scroll()) {
+  .scroll-animate {
+    animation: fade-in linear;
+    animation-timeline: scroll();
+  }
+}
+
+/* ========================================
+   HYPEUI PHASE 2: VISUAL POLISH
+   ======================================== */
+
+/* Mesh Gradient Backgrounds */
+.mesh-gradient-hero {
+  background:
+    radial-gradient(circle at 20% 30%, rgba(136, 192, 208, 0.12), transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(143, 188, 187, 0.08), transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(129, 161, 193, 0.06), transparent 70%),
+    hsl(var(--background));
+  background-attachment: fixed;
+  position: relative;
+}
+
+.mesh-gradient-subtle {
+  background:
+    radial-gradient(circle at 30% 20%, rgba(136, 192, 208, 0.06), transparent 40%),
+    radial-gradient(circle at 70% 80%, rgba(143, 188, 187, 0.04), transparent 40%),
+    hsl(var(--background));
+}
+
+/* Glass Morphism Effects */
+.card-glass {
+  background: rgba(59, 66, 82, 0.4);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border: 1px solid rgba(236, 239, 244, 0.08);
+  box-shadow:
+    0 4px 24px -2px rgba(0, 0, 0, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+.card-glass-hover {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-glass-hover:hover {
+  background: rgba(59, 66, 82, 0.5);
+  backdrop-filter: blur(16px) saturate(200%);
+  -webkit-backdrop-filter: blur(16px) saturate(200%);
+  border-color: rgba(136, 192, 208, 0.2);
+  box-shadow:
+    0 8px 32px -4px rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  transform: translateY(-2px);
+}
+
+/* Noise Texture */
+.noise-texture::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  opacity: 0.4;
+  mix-blend-mode: overlay;
+}
+
+/* Enhanced Shadows - HypeUI Depth System */
+.shadow-depth-1 {
+  box-shadow:
+    0 2px 8px -1px rgba(0, 0, 0, 0.08),
+    0 1px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.shadow-depth-2 {
+  box-shadow:
+    0 4px 16px -2px rgba(0, 0, 0, 0.12),
+    0 2px 8px -2px rgba(0, 0, 0, 0.08);
+}
+
+.shadow-depth-3 {
+  box-shadow:
+    0 8px 32px -4px rgba(0, 0, 0, 0.16),
+    0 4px 16px -4px rgba(0, 0, 0, 0.12);
+}
+
+.shadow-depth-hover {
+  transition: box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.shadow-depth-hover:hover {
+  box-shadow:
+    0 12px 48px -6px rgba(0, 0, 0, 0.2),
+    0 6px 24px -6px rgba(0, 0, 0, 0.16),
+    0 0 0 1px rgba(136, 192, 208, 0.1);
+}
+
+/* Gradient Accent Bars */
+.accent-bar-frost {
+  position: relative;
+  overflow: hidden;
+}
+
+.accent-bar-frost::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    hsl(var(--primary)) 0%,
+    hsl(var(--accent)) 50%,
+    hsl(var(--primary)) 100%
+  );
+  opacity: 0.6;
+}
+
+.accent-bar-vertical {
+  position: relative;
+}
+
+.accent-bar-vertical::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(
+    180deg,
+    hsl(var(--primary)) 0%,
+    hsl(var(--accent)) 50%,
+    hsl(var(--primary)) 100%
+  );
+  opacity: 0.6;
+}
+
+/* Enhanced Transition Durations - HypeUI Motion */
+.transition-fast {
+  transition-duration: 0.2s;
+}
+
+.transition-base {
+  transition-duration: 0.4s;
+}
+
+.transition-slow {
+  transition-duration: 0.6s;
+}
+
+.transition-smooth {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Lift on Hover Effect */
+.lift-on-hover {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.lift-on-hover:hover {
+  transform: translateY(-4px) scale(1.01);
+}

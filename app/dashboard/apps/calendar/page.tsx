@@ -1,8 +1,11 @@
+"use client";
+
 import { generateMeta } from "@/lib/utils";
 import dynamic from "next/dynamic";
 import React from "react";
 
 // Lazy load heavy FullCalendar component
+// Note: Converted to Client Component to support ssr: false with dynamic imports
 const CalendarApp = dynamic(
   () => import("@/app/dashboard/apps/calendar/components/calendar-app"),
   {
@@ -21,15 +24,7 @@ const EventSheet = dynamic(
   { ssr: true }
 );
 
-export async function generateMetadata() {
-  return generateMeta({
-    title: "Calendar",
-    description:
-      "Professional calendar application for planning and organizing events and tasks efficiently. Built with Hypelive, Next.js and Tailwind CSS.",
-    canonical: "/apps/calendar"
-  });
-}
-
+// Note: Metadata moved to layout.tsx since this is now a Client Component
 export default function Page() {
   return (
     <div className="flex lg:space-x-5">

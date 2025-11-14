@@ -1,8 +1,10 @@
 "use client";
 
 import { useEffect } from "react";
+import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { AlertCircle, RefreshCw } from "lucide-react";
+import { AlertCircle, RefreshCw, Home } from "lucide-react";
+import { fadeInUp, staggerContainer } from "@/lib/animations/motion-variants";
 
 export default function ErrorBoundary({
   error,
@@ -20,48 +22,57 @@ export default function ErrorBoundary({
   }, [error]);
 
   return (
-    <div className="flex min-h-[400px] flex-col items-center justify-center gap-4 p-8">
-      <div className="rounded-full bg-destructive/10 p-4">
-        <AlertCircle className="size-8 text-destructive" />
-      </div>
+    <div className="mesh-gradient-subtle flex min-h-[400px] flex-col items-center justify-center gap-4 p-8">
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        animate="visible"
+        className="flex flex-col items-center gap-4"
+      >
+        <motion.div className="card-glass rounded-full p-4" variants={fadeInUp}>
+          <AlertCircle className="size-8 text-destructive" />
+        </motion.div>
 
-      <div className="text-center space-y-2">
-        <h2 className="text-2xl font-bold">Something went wrong!</h2>
-        <p className="text-muted-foreground max-w-md">
-          We apologize for the inconvenience. An unexpected error has occurred.
-        </p>
-        {error.digest && (
-          <p className="text-xs text-muted-foreground font-mono">
-            Error ID: {error.digest}
+        <motion.div className="text-center space-y-2" variants={fadeInUp}>
+          <h2 className="text-2xl font-bold font-display">Something went wrong!</h2>
+          <p className="text-muted-foreground max-w-md">
+            We apologize for the inconvenience. An unexpected error has occurred.
           </p>
-        )}
-      </div>
+          {error.digest && (
+            <p className="text-xs text-muted-foreground font-mono">
+              Error ID: {error.digest}
+            </p>
+          )}
+        </motion.div>
 
-      <div className="flex gap-2">
-        <Button
-          onClick={() => window.location.href = "/dashboard/kol-discovery"}
-          variant="outline"
-        >
-          Go to Dashboard
-        </Button>
-        <Button
-          onClick={reset}
-          className="gap-2"
-        >
-          <RefreshCw className="size-4" />
-          Try Again
-        </Button>
-      </div>
+        <motion.div className="flex gap-2" variants={fadeInUp}>
+          <Button
+            onClick={() => window.location.href = "/dashboard/kol-discovery"}
+            variant="outline"
+            className="gap-2 lift-on-hover"
+          >
+            <Home className="size-4" />
+            Go to Dashboard
+          </Button>
+          <Button
+            onClick={reset}
+            className="gap-2 lift-on-hover"
+          >
+            <RefreshCw className="size-4" />
+            Try Again
+          </Button>
+        </motion.div>
+      </motion.div>
 
       {process.env.NODE_ENV === "development" && (
-        <details className="mt-4 max-w-2xl w-full">
-          <summary className="cursor-pointer text-sm font-medium">
+        <motion.details className="mt-4 max-w-2xl w-full" variants={fadeInUp}>
+          <summary className="cursor-pointer text-sm font-medium transition-colors hover:text-primary">
             Error Details (Development Only)
           </summary>
-          <pre className="mt-2 rounded-md bg-muted p-4 text-xs overflow-auto">
+          <pre className="card-glass mt-2 rounded-md p-4 text-xs overflow-auto border border-border/50">
             {error.stack}
           </pre>
-        </details>
+        </motion.details>
       )}
     </div>
   );

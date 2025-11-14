@@ -12,3 +12,4 @@ export * from "./audience-demographics-card";
 export * from "./smart-search-dialog";
 export * from "./export-dialog";
 export * from "./kol-discovery-client";
+export * from "./filter-context";

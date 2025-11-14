@@ -18,7 +18,7 @@ export const page_routes: PageRoutesType[] = [
       {
         title: "KOL Discovery",
         href: "/dashboard/kol-discovery",
-        icon: "Users2"
+        icon: "Search"
       },
       {
         title: "Default",

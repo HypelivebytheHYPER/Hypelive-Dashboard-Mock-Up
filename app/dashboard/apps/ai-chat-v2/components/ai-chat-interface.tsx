@@ -316,15 +316,17 @@ export default function AIChatInterface() {
               <PromptInputAction tooltip="Attach files">
                 <label
                   htmlFor="file-upload"
-                  className="hover:bg-secondary-foreground/10 flex size-8 cursor-pointer items-center justify-center rounded-2xl">
+                  className="hover:bg-secondary-foreground/10 flex size-8 cursor-pointer items-center justify-center rounded-2xl"
+                  aria-label="Attach files">
                   <input
                     type="file"
                     multiple
                     onChange={handleFileChange}
                     className="hidden"
                     id="file-upload"
+                    aria-label="Upload files"
                   />
-                  <Paperclip className="text-primary size-5" />
+                  <Paperclip className="text-primary size-5" aria-hidden="true" />
                 </label>
               </PromptInputAction>
 
@@ -348,8 +350,12 @@ export default function AIChatInterface() {
 
             <div className="flex gap-2">
               <PromptInputAction tooltip="Voice input">
-                <Button variant="outline" size="icon" className="size-9 rounded-full">
-                  <MicIcon size={18} />
+                <Button
+                  variant="outline"
+                  size="icon"
+                  className="size-9 rounded-full"
+                  aria-label="Start voice input">
+                  <MicIcon size={18} aria-hidden="true" />
                 </Button>
               </PromptInputAction>
               <PromptInputAction tooltip={isStreaming ? "Stop generation" : "Send message"}>

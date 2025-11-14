@@ -1,6 +1,28 @@
 /**
  * Data Transformation Utilities for KOL Records
- * Transforms raw Larkbase data into clean, typed objects
+ *
+ * Transforms raw Larkbase API data into clean, typed TypeScript objects.
+ * Handles data normalization, type conversion, and validation for KOL
+ * (Key Opinion Leader), Campaign, and Rate records.
+ *
+ * @module lib/utils/kol-transform
+ *
+ * @remarks
+ * This module addresses several data quality issues from the Larkbase source:
+ * - Engagement rates stored as basis points (needs division by 100)
+ * - Mixed string/number types requiring parsing
+ * - Empty values represented as backslash ("\")
+ * - URL fields wrapped in objects with .link property
+ * - Missing KOL levels that need calculation from follower counts
+ *
+ * @example
+ * ```typescript
+ * import { transformKOL, transformCampaign } from '@/lib/utils/kol-transform';
+ *
+ * // Transform raw API response
+ * const rawKOL = await larkbaseAPI.getKOLs();
+ * const cleanKOL = transformKOL(rawKOL);
+ * ```
  */
 
 // Option ID to Name mappings based on Larkbase formulas
@@ -121,7 +143,36 @@ export interface Rate {
 }
 
 /**
- * Parse string to number, handling null/undefined
+ * Parses a value to a number, handling various input types and edge cases.
+ *
+ * Safely converts strings, numbers, null, and undefined to numbers. Handles
+ * comma-separated numbers (e.g., "1,234.56") and returns 0 for invalid inputs.
+ *
+ * @param value - Value to parse (any type accepted)
+ * @returns Parsed number or 0 if parsing fails
+ *
+ * @example
+ * ```typescript
+ * parseNumber(42)
+ * // => 42
+ *
+ * parseNumber("1,234.56")
+ * // => 1234.56
+ *
+ * parseNumber(null)
+ * // => 0
+ *
+ * parseNumber("invalid")
+ * // => 0
+ *
+ * parseNumber("")
+ * // => 0
+ * ```
+ *
+ * @remarks
+ * - Null, undefined, and empty strings return 0
+ * - Removes commas before parsing (handles formatted numbers)
+ * - Invalid number strings return 0 (no exceptions thrown)
  */
 function parseNumber(value: any): number {
   if (value === null || value === undefined || value === "") {
@@ -141,8 +192,30 @@ function parseNumber(value: any): number {
 }
 
 /**
- * Fix engagement rate - database stores values multiplied by 100
- * E.g. 10860.08 should be 108.6% but we cap at realistic max of 15%
+ * Parses and corrects engagement rate from Larkbase data.
+ *
+ * The database stores engagement rates as basis points (multiplied by 100).
+ * This function divides by 100 if needed and caps at a realistic maximum of 15%.
+ *
+ * @param value - Raw engagement rate value from database
+ * @returns Corrected engagement rate (0-15%)
+ *
+ * @example
+ * ```typescript
+ * parseEngagementRate(10860.08)
+ * // => 15 (capped at maximum)
+ *
+ * parseEngagementRate(580)
+ * // => 5.8
+ *
+ * parseEngagementRate(5.5)
+ * // => 5.5 (already in correct range)
+ * ```
+ *
+ * @remarks
+ * - Values > 100 are divided by 100 (basis points conversion)
+ * - Result capped at 15% (realistic maximum engagement rate)
+ * - Values 0-100 passed through unchanged
  */
 function parseEngagementRate(value: any): number {
   const rawValue = parseNumber(value);
@@ -159,8 +232,34 @@ function parseEngagementRate(value: any): number {
 }
 
 /**
- * Calculate KOL level from follower count
- * Formula: Mega (≥1M), Macro (100K-1M), Micro (10K-100K), Nano (<10K)
+ * Calculates KOL level based on follower count.
+ *
+ * Uses industry-standard follower count ranges to categorize influencers.
+ *
+ * @param followerCount - Number of followers
+ * @returns KOL level: "Mega", "Macro", "Micro", or "Nano"
+ *
+ * @example
+ * ```typescript
+ * calculateLevel(2500000)
+ * // => "Mega"
+ *
+ * calculateLevel(500000)
+ * // => "Macro"
+ *
+ * calculateLevel(50000)
+ * // => "Micro"
+ *
+ * calculateLevel(5000)
+ * // => "Nano"
+ * ```
+ *
+ * @remarks
+ * Level ranges:
+ * - Mega: >= 1,000,000 followers
+ * - Macro: 100,000 - 999,999 followers
+ * - Micro: 10,000 - 99,999 followers
+ * - Nano: < 10,000 followers
  */
 function calculateLevel(followerCount: number): string {
   if (followerCount >= 1000000) return "Mega";
@@ -170,7 +269,28 @@ function calculateLevel(followerCount: number): string {
 }
 
 /**
- * Extract URL from Larkbase URL object
+ * Extracts URL from Larkbase URL field which can be object or string.
+ *
+ * Larkbase stores URLs in two formats: as objects with .link property
+ * or as plain strings. This function handles both cases.
+ *
+ * @param urlField - URL field value from Larkbase (object or string)
+ * @returns Extracted URL string or null if invalid
+ *
+ * @example
+ * ```typescript
+ * extractUrl({ link: "https://example.com" })
+ * // => "https://example.com"
+ *
+ * extractUrl("https://example.com")
+ * // => "https://example.com"
+ *
+ * extractUrl("\\")
+ * // => null (backslash indicates empty)
+ *
+ * extractUrl(null)
+ * // => null
+ * ```
  */
 function extractUrl(urlField: any): string | null {
   if (!urlField) return null;
@@ -187,7 +307,28 @@ function extractUrl(urlField: any): string | null {
 }
 
 /**
- * Clean string field (handle backslash empty markers)
+ * Cleans string fields by handling Larkbase empty value markers.
+ *
+ * Larkbase uses backslash ("\") to indicate empty fields. This function
+ * normalizes such values to null for consistent handling.
+ *
+ * @param value - String value from Larkbase
+ * @returns Cleaned string or null if empty/invalid
+ *
+ * @example
+ * ```typescript
+ * cleanString("John Doe")
+ * // => "John Doe"
+ *
+ * cleanString("\\")
+ * // => null (Larkbase empty marker)
+ *
+ * cleanString(null)
+ * // => null
+ *
+ * cleanString("")
+ * // => null
+ * ```
  */
 function cleanString(value: any): string | null {
   if (!value || value === "\\") {
@@ -198,7 +339,27 @@ function cleanString(value: any): string | null {
 }
 
 /**
- * Map option ID to name
+ * Maps Larkbase option IDs to human-readable names.
+ *
+ * Larkbase stores select field values as option IDs (e.g., "optS0lkMYn").
+ * This function converts them to readable names using a mapping object.
+ *
+ * @param optionIds - Array of option IDs from Larkbase
+ * @param mapping - Mapping object from option IDs to names
+ * @returns Mapped name or first option ID if not found, or "Unknown" if empty
+ *
+ * @example
+ * ```typescript
+ * const levelMap = { optS0lkMYn: "Mega", optHMhw7yb: "Macro" };
+ * mapOptionId(["optS0lkMYn"], levelMap)
+ * // => "Mega"
+ *
+ * mapOptionId(["unknown_id"], levelMap)
+ * // => "unknown_id" (fallback to ID)
+ *
+ * mapOptionId(null, levelMap)
+ * // => "Unknown"
+ * ```
  */
 function mapOptionId(optionIds: string[] | null, mapping: Record<string, string>): string {
   if (!optionIds || optionIds.length === 0) {
@@ -209,7 +370,54 @@ function mapOptionId(optionIds: string[] | null, mapping: Record<string, string>
 }
 
 /**
- * Transform raw KOL record from Larkbase to typed KOL object
+ * Transforms raw KOL record from Larkbase API to typed KOL object.
+ *
+ * Performs comprehensive data normalization including:
+ * - Type conversion (strings to numbers, dates)
+ * - Engagement rate correction (basis points to percentage)
+ * - KOL level calculation from follower count
+ * - URL extraction from object/string fields
+ * - Empty value normalization ("\" to null)
+ * - Option ID mapping to readable names
+ *
+ * @param rawRecord - Raw KOL record from Larkbase API
+ * @returns Typed and normalized KOL object
+ *
+ * @example
+ * ```typescript
+ * const rawKOL = {
+ *   id: "rec123",
+ *   record_id: "rec123",
+ *   fields: {
+ *     "Nickname": "Thai Influencer",
+ *     "Handle": "@thai_influencer",
+ *     "Follower": "1500000",
+ *     "Engagement Rate": "580.5",
+ *     // ... other fields
+ *   }
+ * };
+ *
+ * const kol = transformKOL(rawKOL);
+ * // => {
+ * //   nickname: "Thai Influencer",
+ * //   handle: "@thai_influencer",
+ * //   follower: 1500000,
+ * //   engagementRate: 5.805,
+ * //   level: "Mega",
+ * //   ...
+ * // }
+ * ```
+ *
+ * @remarks
+ * Key transformations applied:
+ * - Numeric fields: Parsed from strings, commas removed, defaults to 0
+ * - Engagement rate: Divided by 100 if > 100, capped at 15%
+ * - KOL level: Auto-calculated if database field is empty
+ * - URLs: Extracted from { link: "..." } objects
+ * - Empty markers: "\" converted to null
+ * - Collaboration stage: Defaults to "Not Contacted" if empty
+ *
+ * @throws Does not throw - returns object with safe defaults for invalid data
  */
 export function transformKOL(rawRecord: any): KOL {
   const fields = rawRecord.fields;
@@ -290,7 +498,35 @@ export function transformKOL(rawRecord: any): KOL {
 }
 
 /**
- * Transform raw Campaign record from Larkbase
+ * Transforms raw Campaign record from Larkbase API to typed Campaign object.
+ *
+ * Extracts linked KOL data, parses numeric fields, and converts dates.
+ *
+ * @param rawRecord - Raw campaign record from Larkbase API
+ * @returns Typed and normalized Campaign object
+ *
+ * @example
+ * ```typescript
+ * const rawCampaign = {
+ *   id: "rec456",
+ *   record_id: "rec456",
+ *   fields: {
+ *     "Campaign Name": "Summer Sale 2024",
+ *     "Budget": "500000",
+ *     "KOL": [{ record_ids: ["rec123"], text: "Thai Influencer" }],
+ *     // ... other fields
+ *   }
+ * };
+ *
+ * const campaign = transformCampaign(rawCampaign);
+ * // => {
+ * //   campaignName: "Summer Sale 2024",
+ * //   budget: 500000,
+ * //   kolIds: ["rec123"],
+ * //   kolNames: ["Thai Influencer"],
+ * //   ...
+ * // }
+ * ```
  */
 export function transformCampaign(rawRecord: any): Campaign {
   const fields = rawRecord.fields;
@@ -331,7 +567,35 @@ export function transformCampaign(rawRecord: any): Campaign {
 }
 
 /**
- * Transform raw Rate record from Larkbase
+ * Transforms raw Rate record from Larkbase API to typed Rate object.
+ *
+ * Extracts linked KOL information and parses pricing data.
+ *
+ * @param rawRecord - Raw rate record from Larkbase API
+ * @returns Typed and normalized Rate object
+ *
+ * @example
+ * ```typescript
+ * const rawRate = {
+ *   id: "rec789",
+ *   record_id: "rec789",
+ *   fields: {
+ *     "Rate (THB)": "50000",
+ *     "Client Rate (THB)": "65000",
+ *     "Service Type": "Live Streaming",
+ *     // ... other fields
+ *   }
+ * };
+ *
+ * const rate = transformRate(rawRate);
+ * // => {
+ * //   rate: 50000,
+ * //   clientRate: 65000,
+ * //   serviceType: "Live Streaming",
+ * //   markupPercent: 30,
+ * //   ...
+ * // }
+ * ```
  */
 export function transformRate(rawRecord: any): Rate {
   const fields = rawRecord.fields;
@@ -372,7 +636,18 @@ export function transformRate(rawRecord: any): Rate {
 }
 
 /**
- * Format currency in Thai Baht
+ * Formats amount as Thai Baht currency (no decimals).
+ *
+ * @param amount - Amount to format
+ * @returns Formatted THB string (e.g., "฿50,000")
+ *
+ * @example
+ * ```typescript
+ * formatCurrency(50000)
+ * // => "฿50,000"
+ * ```
+ *
+ * @deprecated Use formatCurrency from @/lib/utils/formatters instead
  */
 export function formatCurrency(amount: number): string {
   return new Intl.NumberFormat("th-TH", {
@@ -384,21 +659,62 @@ export function formatCurrency(amount: number): string {
 }
 
 /**
- * Format number with thousand separators
+ * Formats number with thousand separators.
+ *
+ * @param num - Number to format
+ * @returns Formatted number string
+ *
+ * @example
+ * ```typescript
+ * formatNumber(1500000)
+ * // => "1,500,000"
+ * ```
+ *
+ * @deprecated Use formatNumber from @/lib/utils/formatters instead
  */
 export function formatNumber(num: number): string {
   return new Intl.NumberFormat("en-US").format(num);
 }
 
 /**
- * Format percentage
+ * Formats number as percentage with customizable decimals.
+ *
+ * @param num - Number to format
+ * @param decimals - Number of decimal places (default: 2)
+ * @returns Formatted percentage string
+ *
+ * @example
+ * ```typescript
+ * formatPercent(5.678, 2)
+ * // => "5.68%"
+ * ```
+ *
+ * @deprecated Use formatPercentage from @/lib/utils/formatters instead
  */
 export function formatPercent(num: number, decimals: number = 2): string {
   return `${num.toFixed(decimals)}%`;
 }
 
 /**
- * Get level badge color
+ * Returns Tailwind CSS classes for KOL level badge styling.
+ *
+ * Provides consistent color coding for different KOL levels:
+ * - Mega: Purple (highest tier)
+ * - Macro: Blue
+ * - Micro: Green
+ * - Nano: Gray (smallest tier)
+ *
+ * @param level - KOL level ("Mega", "Macro", "Micro", "Nano")
+ * @returns Tailwind CSS class string for badge styling
+ *
+ * @example
+ * ```typescript
+ * getLevelColor("Mega")
+ * // => "bg-purple-100 text-purple-800 border-purple-300"
+ *
+ * getLevelColor("Micro")
+ * // => "bg-green-100 text-green-800 border-green-300"
+ * ```
  */
 export function getLevelColor(level: string): string {
   const colors: Record<string, string> = {
@@ -412,7 +728,25 @@ export function getLevelColor(level: string): string {
 }
 
 /**
- * Get collaboration stage color
+ * Returns Tailwind CSS classes for collaboration stage badge styling.
+ *
+ * Color codes different stages of KOL collaboration pipeline:
+ * - Contacted: Gray (initial contact)
+ * - Sample test: Yellow (testing phase)
+ * - Sales stage: Orange (negotiation)
+ * - GMV: Green (active revenue generation)
+ *
+ * @param stage - Collaboration stage name
+ * @returns Tailwind CSS class string for badge styling
+ *
+ * @example
+ * ```typescript
+ * getStageColor("GMV")
+ * // => "bg-green-100 text-green-800"
+ *
+ * getStageColor("Sample test")
+ * // => "bg-yellow-100 text-yellow-800"
+ * ```
  */
 export function getStageColor(stage: string): string {
   const colors: Record<string, string> = {

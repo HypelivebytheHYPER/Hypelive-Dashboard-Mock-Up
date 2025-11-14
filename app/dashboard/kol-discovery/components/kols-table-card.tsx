@@ -41,6 +41,7 @@ import { useKOLs } from "@/lib/hooks/use-kols";
 import { formatNumber, formatCurrency, formatPercent, getLevelColor, getStageColor, type KOL } from "@/lib/utils/kol-transform";
 import { KOLComparison } from "./kol-comparison";
 import { type FilterValues } from "./advanced-filters";
+import { useFilters } from "./filter-context";
 
 export const kolColumns: ColumnDef<KOL>[] = [
   {
@@ -293,10 +294,11 @@ export const kolColumns: ColumnDef<KOL>[] = [
 ];
 
 interface KOLsTableCardProps {
-  filters?: FilterValues;
+  // Props interface kept for backwards compatibility but filters now come from context
 }
 
-export function KOLsTableCard({ filters }: KOLsTableCardProps) {
+export function KOLsTableCard({}: KOLsTableCardProps = {}) {
+  const { filters } = useFilters();
   const [sorting, setSorting] = React.useState<SortingState>([]);
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>([]);
   const [columnVisibility, setColumnVisibility] = React.useState<VisibilityState>({});

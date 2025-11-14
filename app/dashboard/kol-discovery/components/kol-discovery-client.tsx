@@ -12,18 +12,19 @@ import CustomDateRangePicker from "@/components/custom-date-range-picker";
 import { SparklesIcon, DownloadIcon } from "lucide-react";
 import {
   AdvancedFilters,
-  type FilterValues,
   SmartSearchDialog,
-  ExportDialog
+  ExportDialog,
+  FilterProvider,
+  useFilters
 } from "@/app/dashboard/kol-discovery/components";
 import { useKOLs } from "@/lib/hooks/use-kols";
 
 interface KOLDiscoveryClientProps {
-  children: (filters: FilterValues) => React.ReactNode;
+  children: React.ReactNode;
 }
 
-export function KOLDiscoveryClient({ children }: KOLDiscoveryClientProps) {
-  const [filters, setFilters] = React.useState<FilterValues>({});
+function KOLDiscoveryClientInner({ children }: { children: React.ReactNode }) {
+  const { filters, setFilters } = useFilters();
   const [showSmartSearch, setShowSmartSearch] = React.useState(false);
   const [showExportDialog, setShowExportDialog] = React.useState(false);
 
@@ -31,9 +32,6 @@ export function KOLDiscoveryClient({ children }: KOLDiscoveryClientProps) {
   const { data: kolsData } = useKOLs({
     page_size: 1000
   });
-
-  // Memoize the rendered children to avoid re-rendering
-  const renderedChildren = React.useMemo(() => children(filters), [children, filters]);
 
   return (
     <>
@@ -70,8 +68,8 @@ export function KOLDiscoveryClient({ children }: KOLDiscoveryClientProps) {
       {/* Advanced Search and Filters */}
       <AdvancedFilters onFilterChange={setFilters} activeFilters={filters} />
 
-      {/* Render children with filters */}
-      {renderedChildren}
+      {/* Render server component children */}
+      {children}
 
       {/* Smart Search Dialog */}
       <SmartSearchDialog
@@ -90,5 +88,13 @@ export function KOLDiscoveryClient({ children }: KOLDiscoveryClientProps) {
         totalCount={kolsData?.total || 0}
       />
     </>
+  );
+}
+
+export function KOLDiscoveryClient({ children }: KOLDiscoveryClientProps) {
+  return (
+    <FilterProvider>
+      <KOLDiscoveryClientInner>{children}</KOLDiscoveryClientInner>
+    </FilterProvider>
   );
 }

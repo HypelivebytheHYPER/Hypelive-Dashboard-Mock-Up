@@ -1,262 +1,379 @@
-<div align="center">
-  <img src="public/github.png" alt="Hypelive Dashboard" width="80" height="80">
+# Hypelive Dashboard - KOL Campaign Management Platform
 
-  <h1>Hypelive Dashboard</h1>
+A comprehensive dashboard for managing KOL (Key Opinion Leader) campaigns, content creation, and analytics. Built with Next.js 16.0.3, React 19.2.0, TypeScript, and modern UI components.
 
-  <p>
-    <strong>Professional KOL Management & Analytics Platform</strong>
-    <br />
-    Next.js 14 • React Server Components • TypeScript • Tailwind CSS
-  </p>
+## 📖 Documentation
 
-  <p>
-    <a href="https://dashboard.hypelive.studio">Live Demo</a>
-    •
-    <a href="https://hypelive.studio">Official Website</a>
-    •
-    <a href="#features">Features</a>
-    •
-    <a href="#tech-stack">Tech Stack</a>
-  </p>
-</div>
+**Complete documentation is now available in [docs/README.md](docs/README.md)**
 
----
+- [Architecture](docs/architecture/) - System design and structure
+- [Deployment](docs/deployment/) - Deployment guides and strategies
+- [Development](docs/development/) - API guides and code standards
+- [Design System](docs/design-system/) - HypeUI design system documentation
+- [Optimization](docs/optimization/) - Performance optimization guides
+- [Quality & Audits](docs/quality/) - Code quality audits and action plans
 
-## 🚀 About Hypelive Dashboard
+## 🚀 Features
 
-**Hypelive Dashboard** is a production-ready Key Opinion Leader (KOL) management and analytics platform built for marketing agencies and brands in Southeast Asia. The platform provides comprehensive tools for discovering, analyzing, and managing influencer partnerships.
+### Dashboard Overview
+- **Real-time Metrics**: Live campaign performance, engagement rates, and ROI tracking
+- **Interactive Charts**: Visual analytics with Recharts for trend analysis
+- **Platform Performance**: Cross-platform campaign comparison (Instagram, TikTok, LINE, Blog)
+- **Recent Activity**: Real-time updates on campaign activities and KOL interactions
+- **Vercel Analytics**: Real-time performance monitoring and user interaction tracking
+- **Speed Insights**: Core Web Vitals monitoring for optimal user experience
 
-<img src="public/preview.png" alt="Hypelive Dashboard Preview" width="100%">
+### Campaign Management
+- **Campaign Creation**: Intuitive workflow for setting up new campaigns
+- **Workflow Builder**: Visual campaign workflow designer with drag-and-drop functionality
+- **Performance Tracking**: Real-time campaign metrics and KPI monitoring
+- **ROI Calculator**: Automated return on investment calculations
+- **Template System**: Reusable campaign templates for common scenarios
 
-### 🎯 Key Features
+### KOL Management
+- **KOL Database**: Comprehensive influencer database with detailed profiles
+- **Communication Hub**: Centralized messaging system for KOL outreach
+- **Contract Management**: Automated contract workflows and negotiations
+- **Performance Analytics**: Individual KOL performance tracking and insights
 
-- **KOL Discovery & Search** - Advanced filtering and smart search for finding the perfect influencers
-- **Real-time Analytics** - Track engagement rates, revenue, and campaign performance
-- **Multi-platform Support** - TikTok, Instagram, YouTube, Facebook integration
-- **Collaboration Pipeline** - Manage KOL partnerships from contact to campaign completion
-- **Audience Demographics** - Detailed insights into follower demographics and reach
-- **Export & Reporting** - Generate comprehensive reports in multiple formats
+### Content Management
+- **Content Calendar**: Visual content scheduling and management
+- **Approval Workflows**: Multi-stage content approval process
+- **Asset Library**: Centralized storage for campaign assets
+- **Performance Analytics**: Content performance tracking across platforms
 
-### 🏆 Performance Optimized
+### Analytics & Reporting
+- **Custom Reports**: Flexible reporting with export capabilities
+- **Predictive Analytics**: AI-powered performance predictions
+- **Benchmarking**: Industry comparison and competitive analysis
+- **Attribution Tracking**: Multi-touch attribution for campaign effectiveness
+- **Real-time Monitoring**: Vercel Analytics integration for production insights
+- **Performance Tracking**: Speed Insights for Core Web Vitals optimization
 
-- ⚡ **Lighthouse Score**: 85-87/100
-- 📦 **37% Bundle Size Reduction** through Server Component optimization
-- 📐 **Perfect CLS**: 0.000 (zero layout shift)
-- ⚡ **Excellent TBT**: 59-69ms (smooth interactions)
-- 🚀 **Server-First Architecture**: 64% server components for optimal performance
+## 🏗️ Architecture
 
----
+### Frontend
+- **Framework**: Next.js 16.0.3 with App Router
+- **React**: React 19.2.0 with Server Components
+- **Language**: TypeScript 5.7.2 with strict configuration
+- **UI Components**: shadcn/ui with Radix UI primitives
+- **Styling**: Tailwind CSS 3.4.16 with HypeUI design system
+- **Typography**: Bricolage Grotesque + DM Sans
+- **Colors**: Nord-inspired palette with frost teal accent
+- **Animation**: Framer Motion 11.15.0
+- **Charts**: Recharts for data visualization
+- **State Management**: Zustand for complex state
+- **Forms**: React Hook Form with Zod validation
+- **Analytics**: Vercel Analytics 1.5.0 + Speed Insights 1.2.0
+- **Caching**: Cache Components (Next.js 16) - Automatic intelligent caching
+- **Optimization**: Dynamic imports, React Compiler, Turbopack
 
-## 🛠 Tech Stack
+### Backend Services
+- **API Layer**: RESTful API with Cloudflare Workers integration
+- **Authentication**: JWT-based authentication with role-based access
+- **Caching**: Redis-based caching with tag invalidation
+- **Logging**: Structured logging with performance monitoring
+- **Error Handling**: Comprehensive error handling and recovery
 
-### Core Framework
-- **Next.js 14.2** - React framework with App Router
-- **React 18** - React Server Components and Suspense
-- **TypeScript 5** - Type-safe development
-- **Tailwind CSS 3.4** - Utility-first styling
+### Data Layer
+- **Database**: PostgreSQL with Prisma ORM
+- **File Storage**: Cloudflare R2 for asset management
+- **Analytics**: Real-time analytics with data aggregation
+- **Search**: Full-text search capabilities
 
-### UI Components
-- **Radix UI** - Accessible component primitives
-- **shadcn/ui** - Beautifully designed components
-- **Recharts** - Data visualization and charting
-- **Lucide Icons** - Modern icon library
+## 🛠️ Technology Stack
 
-### State & Data Management
-- **TanStack Query v5** - Server state management
-- **TanStack Table v8** - Advanced data tables
-- **Zustand 5** - Client state management
-- **Zod** - Schema validation
+### Core Technologies
+- **Next.js 16.0.3**: React framework with App Router and React Server Components
+- **React 19.2.0**: Latest React with enhanced server components
+- **TypeScript 5.7.2**: Type-safe development with strict mode
+- **Tailwind CSS 3.4.16**: Utility-first CSS framework
+- **Radix UI**: Headless accessible UI components
+- **Framer Motion 11.15.0**: Advanced animation library
+- **React Hook Form**: Form state management
+- **Zod**: Schema validation
+- **Zustand**: State management
+- **Vercel Analytics 1.5.0**: Real-time analytics and monitoring
+- **Speed Insights 1.2.0**: Core Web Vitals tracking
+- **Cache Components (Next.js 16)**: Automatic intelligent caching replacing manual ISR configuration
 
-### Performance & Optimization
-- **Next.js Server Components** - Reduced JavaScript bundle
-- **React Suspense** - Streaming SSR
-- **Bundle Analyzer** - Performance monitoring
-- **Lighthouse CI** - Automated performance audits
+### Data Visualization
+- **Recharts**: Chart library for React
+- **D3.js**: Custom data visualizations
+- **Chart.js**: Alternative charting solution
 
----
+### Development Tools
+- **ESLint**: Code linting
+- **Prettier**: Code formatting
+- **Jest**: Testing framework
+- **TypeScript**: Type checking
 
-## 📊 Dashboard Pages
-
-- **KOL Discovery** - Search and filter KOLs by platform, engagement, location
-- **Website Analytics** - Traffic analysis and user behavior tracking
-- **Default Dashboard** - Overview of key metrics and statistics
-- **E-commerce** - Sales tracking and product performance
-- **Project Management** - Task tracking and team collaboration
-- **Hospital Management** - Patient records and appointment scheduling
-- **Finance** - Financial reports and transaction monitoring
-- **Crypto** - Cryptocurrency portfolio tracking
-- **Sales** - Sales pipeline and customer management
-- **File Manager** - Document organization and sharing
-- **Academy** - Course management and student tracking
-
----
-
-## 🚀 Getting Started
+## 📦 Installation
 
 ### Prerequisites
+- Node.js >= 18.0.0
+- npm >= 8.0.0 or pnpm >= 8.0.0
 
-- Node.js 18+ installed
-- npm or yarn package manager
-
-### Installation
-
+### Setup
 ```bash
 # Clone the repository
-git clone https://github.com/HypelivebytheHYPER/Hypelive-Dashboard-Mock-Up.git
-
-# Navigate to project directory
-cd Hypelive-Dashboard-Mock-Up
+git clone https://github.com/your-org/hypelive-dashboard.git
+cd hypelive-dashboard
 
 # Install dependencies
-npm install
+pnpm install
 
-# Run development server
-npm run dev
-```
+# Set up environment variables
+cp .env.example .env.local
 
-Open [http://127.0.0.1:3200](http://127.0.0.1:3200) to view the dashboard.
-
-### Build for Production
-
-```bash
-# Create production build
-npm run build
-
-# Start production server
-npm start
-```
-
-### Performance Monitoring
-
-```bash
-# Run Lighthouse audit on production
-npm run lighthouse
-
-# Analyze bundle size
-ANALYZE=true npm run build
-```
-
----
-
-## 📁 Project Structure
-
-```
-hypelive-dashboard/
-├── app/                          # Next.js App Router pages
-│   ├── dashboard/               # Dashboard pages
-│   │   ├── kol-discovery/      # KOL management (Phase 1 optimized)
-│   │   ├── website-analytics/  # Analytics dashboard
-│   │   └── ...                 # Other dashboard pages
-│   └── api/                    # API routes
-├── components/                  # Reusable React components
-│   ├── ui/                     # shadcn/ui components
-│   └── magic-ui/               # Enhanced UI components
-├── lib/                        # Utility functions and helpers
-│   ├── api/                    # API client and server functions
-│   ├── hooks/                  # Custom React hooks
-│   └── utils/                  # Utility functions
-├── public/                     # Static assets
-├── scripts/                    # Build and deployment scripts
-│   └── lighthouse-audit.mjs   # Performance monitoring
-└── lighthouse-reports/         # Performance audit reports
-```
-
----
-
-## 🎨 Customization
-
-### Theme Configuration
-
-The dashboard uses Tailwind CSS with custom theme configuration:
-
-```typescript
-// tailwind.config.ts
-export default {
-  theme: {
-    extend: {
-      colors: {
-        primary: "hsl(var(--primary))",
-        secondary: "hsl(var(--secondary))",
-        // ...custom color scheme
-      }
-    }
-  }
-}
+# Start development server
+pnpm dev
 ```
 
 ### Environment Variables
+Create a `.env.local` file with the following variables:
 
-Create a `.env.local` file:
-
-```bash
+```env
 # API Configuration
-NEXT_PUBLIC_API_URL=your_api_url
-LARK_APP_ID=your_lark_app_id
-LARK_APP_SECRET=your_lark_app_secret
+NEXT_PUBLIC_API_BASE_URL=http://localhost:3000/api
+API_SECRET_KEY=your-secret-key
 
-# Analytics
-NEXT_PUBLIC_GA_ID=your_google_analytics_id
+# Database
+DATABASE_URL=postgresql://user:password@localhost:5432/hypelive
+
+# Cloudflare Configuration
+CLOUDFLARE_ACCOUNT_ID=your-account-id
+CLOUDFLARE_API_TOKEN=your-api-token
+R2_BUCKET_NAME=your-bucket-name
+
+# Authentication
+JWT_SECRET=your-jwt-secret
+NEXTAUTH_SECRET=your-nextauth-secret
+NEXTAUTH_URL=http://localhost:3000
+
+# Redis (for caching)
+REDIS_URL=redis://localhost:6379
+
+# External Services
+OPENAI_API_KEY=your-openai-key
+ANTHROPIC_API_KEY=your-anthropic-key
+GOOGLE_CLOUD_KEY=your-google-cloud-key
 ```
 
----
+## 🚀 Development
 
-## 📈 Performance Metrics
+### Available Scripts
+```bash
+# Development
+pnpm dev              # Start development server
+pnpm build            # Build for production
+pnpm start            # Start production server
+pnpm lint             # Run ESLint
+pnpm type-check       # Run TypeScript check
 
-### Production Performance (Lighthouse Audit)
+# Testing
+pnpm test             # Run all tests
+pnpm test:watch       # Run tests in watch mode
+pnpm test:coverage    # Run tests with coverage
+```
 
-| Page | Performance | FCP | LCP | TBT | CLS |
-|------|-------------|-----|-----|-----|-----|
-| KOL Discovery | Optimized | ~1s | ~3.8s | ~60ms | 0.000 |
-| Website Analytics | 85/100 | 979ms | 3.97s | 59ms | 0.000 |
-| Default Dashboard | 87/100 | 1.01s | 3.86s | 69ms | 0.000 |
+### Project Structure
+```
+hypelive-dashboard/
+├── app/                    # Next.js App Router
+│   ├── dashboard/         # Dashboard routes
+│   ├── api/               # API routes
+│   └── layout.tsx         # Root layout
+├── components/            # React components
+│   ├── ui/               # shadcn/ui components
+│   ├── dashboard/        # Dashboard-specific components
+│   └── campaign/         # Campaign components
+├── lib/                   # Utility libraries
+│   ├── api/              # API client and services
+│   ├── types/            # TypeScript type definitions
+│   └── core/             # Core utilities
+├── hooks/                 # Custom React hooks
+├── utils/                 # Utility functions
+└── public/                # Static assets
+```
 
-### Optimization Achievements
+## 🔧 Configuration
 
-- 📦 **37% bundle reduction** on KOL Discovery page
-- ⚡ **55-70% TBT improvement** through Server Components
-- 📐 **Perfect layout stability** (0.000 CLS)
-- 🏗️ **64% server components** for optimal performance
+### API Configuration
+The application uses a centralized API client with:
+- Automatic retry logic with exponential backoff
+- Rate limiting protection
+- Request/response caching
+- Error handling and recovery
 
----
+### Database Configuration
+- PostgreSQL with Prisma ORM
+- Database migrations for schema management
+- Connection pooling for performance
+- Backup and recovery procedures
 
-## 🔐 Security
+### Authentication Configuration
+- JWT-based authentication
+- Role-based access control
+- Session management
+- Password hashing with bcrypt
 
-- ✅ HTTPS enforced on all pages
-- ✅ Security headers configured (HSTS, CSP, X-Frame-Options)
-- ✅ Environment variables for sensitive data
-- ✅ Input validation with Zod schemas
-- ✅ XSS protection enabled
+## 📊 Analytics Integration
 
----
+### Supported Platforms
+- **Instagram**: Business API integration
+- **TikTok**: Business API integration
+- **LINE**: Business Connect API
+- **Facebook**: Graph API integration
+- **YouTube**: Data API integration
 
-## 📝 License
+### Metrics Tracked
+- Campaign reach and impressions
+- Engagement rates and interactions
+- Conversion tracking
+- ROI calculations
+- Audience demographics
+- Content performance
 
-This project is proprietary software owned by Hypelive. All rights reserved.
+## 🔒 Security
 
----
+### Data Protection
+- Input validation and sanitization
+- SQL injection prevention
+- XSS protection
+- CSRF token validation
+- Rate limiting
+
+### Privacy Compliance
+- GDPR compliance features
+- Data anonymization
+- Consent management
+- Data retention policies
+- Right to deletion
+
+## 🧪 Testing
+
+### Unit Tests
+- Component testing with Jest
+- API endpoint testing
+- Utility function testing
+- Hook testing
+
+### Integration Tests
+- API integration testing
+- Database integration testing
+- External service mocking
+- End-to-end testing
+
+### Performance Testing
+- Load testing capabilities
+- Performance monitoring
+- Memory usage optimization
+- Bundle size analysis
+
+## 🚀 Deployment
+
+### Production Build
+```bash
+# Build for production
+pnpm build
+
+# Start production server
+pnpm start
+```
+
+### Environment Setup
+- Production environment configuration
+- SSL/TLS certificate setup
+- Domain configuration
+- CDN setup for static assets
+
+### Monitoring
+- Application performance monitoring
+- Error tracking and reporting
+- Health check endpoints
+- Log aggregation
+
+## 📚 Complete Documentation
+
+All documentation has been organized into the `/docs` directory. See [docs/README.md](docs/README.md) for the complete documentation index.
+
+### Key Documents
+- **[Architecture Overview](docs/architecture/2025-architecture.md)** - Modern React Server Components architecture
+- **[API Client Migration](docs/development/api/api-client-migration.md)** - API client refactoring guide
+- **[Deployment Guide](docs/deployment/deployment-guide-2025.md)** - Comprehensive deployment instructions
+- **[HypeUI Design System](docs/design-system/hypeui/)** - Complete design system documentation
+  - Phase 1: Typography & Colors (Grade: B+ 85/100)
+  - Phase 2: Visual Polish & Motion (Grade: A- 92/100)
+- **[Code Quality Audit](docs/quality/comprehensive-audit.md)** - Latest codebase audit (A+ 95/100)
+- **[Action Plan](docs/quality/audit-action-plan.md)** - Pending improvements and fixes
+
+### Documentation Structure
+```
+docs/
+├── architecture/     # System design and structure
+├── deployment/      # Deployment guides and strategies
+├── development/     # API guides and code standards
+├── design-system/   # HypeUI design system
+├── optimization/    # Performance optimization
+├── quality/         # Code quality and audits
+└── archive/         # Historical documents
+```
+
+## 🤝 Contributing
+
+### Development Workflow
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Write tests for new features
+5. Submit a pull request
+
+### Code Standards
+- Follow TypeScript best practices
+- Use consistent code formatting
+- Write comprehensive tests
+- Document your code
+- Follow accessibility guidelines
+
+### Review Process
+- Code review by maintainers
+- Automated testing validation
+- Performance impact assessment
+- Security review
+
+## 🆘 Support
+
+### Getting Help
+- Check the documentation
+- Search existing issues
+- Create a new issue
+- Contact support team
+
+### Reporting Issues
+- Use the issue tracker
+- Provide detailed descriptions
+- Include reproduction steps
+- Add relevant screenshots
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
-Built with modern web technologies:
-- [Next.js](https://nextjs.org/) - React framework
-- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS
-- [shadcn/ui](https://ui.shadcn.com/) - Component library
-- [Radix UI](https://www.radix-ui.com/) - UI primitives
-- [Recharts](https://recharts.org/) - Data visualization
-- [TanStack](https://tanstack.com/) - Table and Query libraries
+- Next.js team for the excellent framework
+- shadcn/ui for the beautiful components
+- Radix UI for the headless components
+- The open-source community for various libraries and tools
+
+## 📞 Contact
+
+For questions, support, or collaboration opportunities:
+- Email: support@hypelive.com
+- Website: https://hypelive.com
+- Documentation: https://docs.hypelive.com
 
 ---
 
-## 📧 Contact & Support
-
-**Hypelive Team**
-- Website: [hypelive.studio](https://hypelive.studio)
-- Dashboard: [dashboard.hypelive.studio](https://dashboard.hypelive.studio)
-- Email: support@hypelive.studio
-
----
-
-<div align="center">
-  <p>Made with ❤️ by the Hypelive Team</p>
-  <p>© 2025 Hypelive. All rights reserved.</p>
-</div>
+**Built with ❤️ by the Hypelive Team**

@@ -12,8 +12,8 @@ export function CardOptionsMenu() {
     <div className="absolute end-4 top-2">
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <Button variant="ghost" size="sm">
-            <Ellipsis className="h-5 w-5" />
+          <Button variant="ghost" size="sm" aria-label="Card options menu">
+            <Ellipsis className="h-5 w-5" aria-hidden="true" />
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent>

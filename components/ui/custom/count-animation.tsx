@@ -1,24 +1,27 @@
-"use client";
+"use client"
 
-import { useEffect } from "react";
-import { cn } from "@/lib/utils";
-import { motion, useMotionValue, useTransform, animate } from "motion/react";
+import * as React from "react"
+import { cn } from "@/lib/utils"
+import { motion, useMotionValue, useTransform, animate } from "motion/react"
 
-export default function CountAnimation({
+export interface CountAnimationProps {
+  number: number
+  className?: string
+}
+
+export const CountAnimation: React.FC<CountAnimationProps> = React.memo(({
   number,
   className
-}: {
-  number: number;
-  className?: string;
-}) {
-  const count = useMotionValue(0);
-  const rounded = useTransform(count, Math.round);
+}) => {
+  const count = useMotionValue(0)
+  const rounded = useTransform(count, Math.round)
 
-  useEffect(() => {
-    const animation = animate(count, number, { duration: 2 });
+  React.useEffect(() => {
+    const animation = animate(count, number, { duration: 2 })
+    return animation.stop
+  }, [count, number])
 
-    return animation.stop;
-  }, [count, number]);
+  return <motion.span className={cn(className)}>{rounded}</motion.span>
+})
 
-  return <motion.span className={cn(className)}>{rounded}</motion.span>;
-}
+CountAnimation.displayName = "CountAnimation"

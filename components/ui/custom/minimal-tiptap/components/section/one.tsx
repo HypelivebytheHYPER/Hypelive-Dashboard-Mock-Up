@@ -4,7 +4,7 @@ import type { Level } from '@tiptap/extension-heading'
 import type { FormatAction } from '../../types'
 import type { VariantProps } from 'class-variance-authority'
 import type { toggleVariants } from '@/components/ui/toggle'
-import { cn } from '@/lib/utils'
+import { cn } from "@/lib/utils"
 import { CaretDownIcon, LetterCaseCapitalizeIcon } from '@radix-ui/react-icons'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu'
 import { ToolbarButton } from '../toolbar-button'
@@ -133,5 +133,3 @@ export const SectionOne: React.FC<SectionOneProps> = React.memo(
 )
 
 SectionOne.displayName = 'SectionOne'
-
-export default SectionOne

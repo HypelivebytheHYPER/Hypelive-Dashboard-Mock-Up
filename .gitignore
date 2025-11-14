@@ -41,3 +41,16 @@ wrangler.toml
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# AI-generated files (auto-added by Smart Documentation Agent)
+*-ai-generated*.md
+*-claude-*.md
+*-gpt-*.md
+*-copilot-*.md
+*-temp-*.md
+*.md.tmp
+*.md~
+*-draft-v*.md
+untitled*.md
+scratch*.md
+.ai-context/temp/
